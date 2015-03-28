@@ -1,0 +1,5 @@
+SCC = This is a source code control file
+
+[DotNetCoords.csproj]
+SCC_Aux_Path = http://localhost/VaultService|:1
+SCC_Project_Name = $/DotNetCoords

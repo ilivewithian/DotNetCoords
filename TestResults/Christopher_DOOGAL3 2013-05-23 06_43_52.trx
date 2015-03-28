@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0dc2cf66-5751-49bc-8576-a08a66d59f70" name="Christopher@DOOGAL3 2013-05-23 06:43:52" runUser="DOOGAL3\Christopher" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local Test Run" id="33459d84-86fb-491a-8874-767fff183d66">
+    <Description>This is a default test run configuration for a local test run.</Description>
+    <Deployment runDeploymentRoot="Christopher_DOOGAL3 2013-05-23 06_43_52">
+      <DeploymentItem filename="C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\bin\Debug\DotNetCoords.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-05-23T06:43:52.9061670+01:00" queuing="2013-05-23T06:43:53.7688694+01:00" start="2013-05-23T06:43:53.8058819+01:00" finish="2013-05-23T06:44:46.0535418+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="12" executed="12" passed="11" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="DOOGAL3" outcome="Error" timestamp="2013-05-23T06:44:46.0525418+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestOsRefConstructorFromLatLng" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="2b8d376f-6fa3-7eb7-c1f3-0655e9a6fcdc">
+      <Execution id="b0b56e7f-9f4a-414d-97c2-d21ca4ef1e6b" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestOsRefConstructorFromLatLng" />
+    </UnitTest>
+    <UnitTest name="CompareToWGS84WithToDatum" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="e1b58b0d-25a5-7b09-dea6-56f9bf4e8c41">
+      <Execution id="a4a0fcd1-1db4-4495-b70b-03f036ca61da" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToWGS84WithToDatum" />
+    </UnitTest>
+    <UnitTest name="TestUTMRefToString" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="789de91a-7598-925a-7391-ee91ddcd8368">
+      <Execution id="18dfc11b-d06f-48f5-9d8c-957c6ca1be72" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestUTMRefToString" />
+    </UnitTest>
+    <UnitTest name="CompareToOSGB36WithToDatum" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="71a4d3d2-504e-73c3-2121-e7d33bdb2924">
+      <Execution id="fe151205-00ad-44b8-bb1c-3f2487509516" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CompareToOSGB36WithToDatum" />
+    </UnitTest>
+    <UnitTest name="TestED50" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="17e39a41-5c4f-5f5f-e4c1-d2582b888039">
+      <Execution id="0b57a40d-f211-4b0c-9e3f-0840ae991320" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestED50" />
+    </UnitTest>
+    <UnitTest name="TestIsValidLatLng" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="5259fc02-714b-f5e9-d7ff-253fe76aa0a7">
+      <Execution id="6e0f8596-7154-43ff-a8ba-f40af0ac95a1" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestIsValidLatLng" />
+    </UnitTest>
+    <UnitTest name="TestIrishRefConstructorFromLatLng" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="5c7925eb-6ef0-b35f-cac2-40ac0c37f0d2">
+      <Execution id="3b532b3c-4421-4605-ae7d-f2d5920ed3e9" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestIrishRefConstructorFromLatLng" />
+    </UnitTest>
+    <UnitTest name="TestMgrsRefConstructor" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="515dcee3-cb71-7106-3687-94748bffc385">
+      <Execution id="2305c2ae-d109-4f18-9705-34da4308b82d" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMgrsRefConstructor" />
+    </UnitTest>
+    <UnitTest name="TestCopyAndReverseConversion" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="87a3120a-7894-b740-0fd8-4bafe3e4de0d">
+      <Execution id="725afd07-9bb7-41e5-bd7d-c5b0602dff7c" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestCopyAndReverseConversion" />
+    </UnitTest>
+    <UnitTest name="TestLatLngConstructor2" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="6a9e5a1f-23d4-b67a-b8ad-5253a5874287">
+      <Execution id="570137ef-c2ac-48bd-b3a7-2bef5de0f749" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestLatLngConstructor2" />
+    </UnitTest>
+    <UnitTest name="TestOsRefConstructor" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="ae86a07e-eca5-4bdf-80d2-6830f63952d3">
+      <Execution id="617eb49e-e824-4182-9682-426d9d94b5ce" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestOsRefConstructor" />
+    </UnitTest>
+    <UnitTest name="TestLatLngConstructor" storage="c:\users\christopher\documents\visual studio 2010\projects\dotnetcoordstest\bin\debug\dotnetcoordstest.dll" id="469e90a7-f6a1-8af4-5eee-e16e1d6fdce8">
+      <Execution id="0b5c7cbe-937b-40d7-8fe4-37138b0756d2" />
+      <TestMethod codeBase="C:/Users/Christopher/Documents/Visual Studio 2010/Projects/DotNetCoordsTest/bin/Debug/DotNetCoordsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="DotNetCoordsTest.UnitTest1, DotNetCoordsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestLatLngConstructor" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ae86a07e-eca5-4bdf-80d2-6830f63952d3" executionId="617eb49e-e824-4182-9682-426d9d94b5ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="469e90a7-f6a1-8af4-5eee-e16e1d6fdce8" executionId="0b5c7cbe-937b-40d7-8fe4-37138b0756d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a9e5a1f-23d4-b67a-b8ad-5253a5874287" executionId="570137ef-c2ac-48bd-b3a7-2bef5de0f749" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="789de91a-7598-925a-7391-ee91ddcd8368" executionId="18dfc11b-d06f-48f5-9d8c-957c6ca1be72" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="515dcee3-cb71-7106-3687-94748bffc385" executionId="2305c2ae-d109-4f18-9705-34da4308b82d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5259fc02-714b-f5e9-d7ff-253fe76aa0a7" executionId="6e0f8596-7154-43ff-a8ba-f40af0ac95a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17e39a41-5c4f-5f5f-e4c1-d2582b888039" executionId="0b57a40d-f211-4b0c-9e3f-0840ae991320" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87a3120a-7894-b740-0fd8-4bafe3e4de0d" executionId="725afd07-9bb7-41e5-bd7d-c5b0602dff7c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="71a4d3d2-504e-73c3-2121-e7d33bdb2924" executionId="fe151205-00ad-44b8-bb1c-3f2487509516" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1b58b0d-25a5-7b09-dea6-56f9bf4e8c41" executionId="a4a0fcd1-1db4-4495-b70b-03f036ca61da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b8d376f-6fa3-7eb7-c1f3-0655e9a6fcdc" executionId="b0b56e7f-9f4a-414d-97c2-d21ca4ef1e6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c7925eb-6ef0-b35f-cac2-40ac0c37f0d2" executionId="3b532b3c-4421-4605-ae7d-f2d5920ed3e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="617eb49e-e824-4182-9682-426d9d94b5ce" testId="ae86a07e-eca5-4bdf-80d2-6830f63952d3" testName="TestOsRefConstructor" computerName="DOOGAL3" duration="00:00:00.0266359" startTime="2013-05-23T06:43:53.8298900+01:00" endTime="2013-05-23T06:43:54.3550684+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="617eb49e-e824-4182-9682-426d9d94b5ce">
+    </UnitTestResult>
+    <UnitTestResult executionId="0b5c7cbe-937b-40d7-8fe4-37138b0756d2" testId="469e90a7-f6a1-8af4-5eee-e16e1d6fdce8" testName="TestLatLngConstructor" computerName="DOOGAL3" duration="00:00:00.0027472" startTime="2013-05-23T06:43:54.3650704+01:00" endTime="2013-05-23T06:43:54.3710738+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b5c7cbe-937b-40d7-8fe4-37138b0756d2">
+    </UnitTestResult>
+    <UnitTestResult executionId="570137ef-c2ac-48bd-b3a7-2bef5de0f749" testId="6a9e5a1f-23d4-b67a-b8ad-5253a5874287" testName="TestLatLngConstructor2" computerName="DOOGAL3" duration="00:00:00.0008447" startTime="2013-05-23T06:43:54.3770744+01:00" endTime="2013-05-23T06:43:54.3810755+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="570137ef-c2ac-48bd-b3a7-2bef5de0f749">
+    </UnitTestResult>
+    <UnitTestResult executionId="18dfc11b-d06f-48f5-9d8c-957c6ca1be72" testId="789de91a-7598-925a-7391-ee91ddcd8368" testName="TestUTMRefToString" computerName="DOOGAL3" duration="00:00:00.0010328" startTime="2013-05-23T06:43:54.3860775+01:00" endTime="2013-05-23T06:43:54.3910788+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18dfc11b-d06f-48f5-9d8c-957c6ca1be72">
+    </UnitTestResult>
+    <UnitTestResult executionId="2305c2ae-d109-4f18-9705-34da4308b82d" testId="515dcee3-cb71-7106-3687-94748bffc385" testName="TestMgrsRefConstructor" computerName="DOOGAL3" duration="00:00:00.0039637" startTime="2013-05-23T06:43:54.3980812+01:00" endTime="2013-05-23T06:43:54.4050839+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2305c2ae-d109-4f18-9705-34da4308b82d">
+    </UnitTestResult>
+    <UnitTestResult executionId="6e0f8596-7154-43ff-a8ba-f40af0ac95a1" testId="5259fc02-714b-f5e9-d7ff-253fe76aa0a7" testName="TestIsValidLatLng" computerName="DOOGAL3" duration="00:00:00.0008809" startTime="2013-05-23T06:43:54.4130862+01:00" endTime="2013-05-23T06:43:54.4160873+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e0f8596-7154-43ff-a8ba-f40af0ac95a1">
+    </UnitTestResult>
+    <UnitTestResult executionId="0b57a40d-f211-4b0c-9e3f-0840ae991320" testId="17e39a41-5c4f-5f5f-e4c1-d2582b888039" testName="TestED50" computerName="DOOGAL3" duration="00:00:00.0054490" startTime="2013-05-23T06:43:54.4240903+01:00" endTime="2013-05-23T06:43:54.4330930+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b57a40d-f211-4b0c-9e3f-0840ae991320">
+    </UnitTestResult>
+    <UnitTestResult executionId="725afd07-9bb7-41e5-bd7d-c5b0602dff7c" testId="87a3120a-7894-b740-0fd8-4bafe3e4de0d" testName="TestCopyAndReverseConversion" computerName="DOOGAL3" duration="00:00:00.0006412" startTime="2013-05-23T06:43:54.4390954+01:00" endTime="2013-05-23T06:43:54.4430964+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="725afd07-9bb7-41e5-bd7d-c5b0602dff7c">
+    </UnitTestResult>
+    <UnitTestResult executionId="fe151205-00ad-44b8-bb1c-3f2487509516" testId="71a4d3d2-504e-73c3-2121-e7d33bdb2924" testName="CompareToOSGB36WithToDatum" computerName="DOOGAL3" duration="00:00:00.0003115" startTime="2013-05-23T06:43:54.4490991+01:00" endTime="2013-05-23T06:43:54.4520997+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe151205-00ad-44b8-bb1c-3f2487509516">
+    </UnitTestResult>
+    <UnitTestResult executionId="a4a0fcd1-1db4-4495-b70b-03f036ca61da" testId="e1b58b0d-25a5-7b09-dea6-56f9bf4e8c41" testName="CompareToWGS84WithToDatum" computerName="DOOGAL3" duration="00:00:00.0003508" startTime="2013-05-23T06:43:54.4581014+01:00" endTime="2013-05-23T06:43:54.4621031+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4a0fcd1-1db4-4495-b70b-03f036ca61da">
+    </UnitTestResult>
+    <UnitTestResult executionId="b0b56e7f-9f4a-414d-97c2-d21ca4ef1e6b" testId="2b8d376f-6fa3-7eb7-c1f3-0655e9a6fcdc" testName="TestOsRefConstructorFromLatLng" computerName="DOOGAL3" duration="00:00:00.0018884" startTime="2013-05-23T06:43:54.4681048+01:00" endTime="2013-05-23T06:43:54.4731068+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0b56e7f-9f4a-414d-97c2-d21ca4ef1e6b">
+    </UnitTestResult>
+    <UnitTestResult executionId="3b532b3c-4421-4605-ae7d-f2d5920ed3e9" testId="5c7925eb-6ef0-b35f-cac2-40ac0c37f0d2" testName="TestIrishRefConstructorFromLatLng" computerName="DOOGAL3" duration="00:00:51.5744330" startTime="2013-05-23T06:43:54.4791088+01:00" endTime="2013-05-23T06:44:46.0535418+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b532b3c-4421-4605-ae7d-f2d5920ed3e9">
+    </UnitTestResult>
+  </Results>
+</TestRun>

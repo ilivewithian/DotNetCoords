@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="d545f625-386c-4bde-8c7f-513edce9d18d" Title="DotNetCoords" Url="html/N_DotNetCoords.htm">
+    <HelpTOCNode Id="f4a8e864-5248-4194-922a-3e0733251bce" Title="CoordinateSystem Class" Url="html/T_DotNetCoords_CoordinateSystem.htm">
+      <HelpTOCNode Title="CoordinateSystem Constructor " Url="html/M_DotNetCoords_CoordinateSystem__ctor.htm" />
+      <HelpTOCNode Id="47a7dd32-0698-481a-8c04-9b8aa0b2e32f" Title="CoordinateSystem Methods" Url="html/Methods_T_DotNetCoords_CoordinateSystem.htm">
+        <HelpTOCNode Title="ToLatLng Method " Url="html/M_DotNetCoords_CoordinateSystem_ToLatLng.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4f5ec5b7-5852-4b72-b299-29bd4cd5d3f8" Title="CoordinateSystem Properties" Url="html/Properties_T_DotNetCoords_CoordinateSystem.htm">
+        <HelpTOCNode Title="Datum Property " Url="html/P_DotNetCoords_CoordinateSystem_Datum.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="EastWest Enumeration" Url="html/T_DotNetCoords_EastWest.htm" />
+    <HelpTOCNode Id="6115f6a9-4f33-4af5-a8de-52357b5c477c" Title="ECEFRef Class" Url="html/T_DotNetCoords_ECEFRef.htm">
+      <HelpTOCNode Id="ea490b38-8162-4af6-98c4-08d5dcec6ea8" Title="ECEFRef Constructor " Url="html/Overload_DotNetCoords_ECEFRef__ctor.htm">
+        <HelpTOCNode Title="ECEFRef Constructor (LatLng)" Url="html/M_DotNetCoords_ECEFRef__ctor.htm" />
+        <HelpTOCNode Title="ECEFRef Constructor (Double, Double, Double)" Url="html/M_DotNetCoords_ECEFRef__ctor_1.htm" />
+        <HelpTOCNode Title="ECEFRef Constructor (Double, Double, Double, Datum)" Url="html/M_DotNetCoords_ECEFRef__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bce16296-b712-4e31-a198-3a3259328bc1" Title="ECEFRef Methods" Url="html/Methods_T_DotNetCoords_ECEFRef.htm">
+        <HelpTOCNode Title="ToLatLng Method " Url="html/M_DotNetCoords_ECEFRef_ToLatLng.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_DotNetCoords_ECEFRef_ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0228273b-c173-4ce8-83cf-9bac57d82a1b" Title="ECEFRef Properties" Url="html/Properties_T_DotNetCoords_ECEFRef.htm">
+        <HelpTOCNode Title="X Property " Url="html/P_DotNetCoords_ECEFRef_X.htm" />
+        <HelpTOCNode Title="Y Property " Url="html/P_DotNetCoords_ECEFRef_Y.htm" />
+        <HelpTOCNode Title="Z Property " Url="html/P_DotNetCoords_ECEFRef_Z.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="48fec572-c173-4a23-9a77-c37076038551" Title="IrishRef Class" Url="html/T_DotNetCoords_IrishRef.htm">
+      <HelpTOCNode Id="beca6b49-d300-4db5-9d74-6afac921587b" Title="IrishRef Constructor " Url="html/Overload_DotNetCoords_IrishRef__ctor.htm">
+        <HelpTOCNode Title="IrishRef Constructor (String)" Url="html/M_DotNetCoords_IrishRef__ctor_2.htm" />
+        <HelpTOCNode Title="IrishRef Constructor (LatLng)" Url="html/M_DotNetCoords_IrishRef__ctor.htm" />
+        <HelpTOCNode Title="IrishRef Constructor (Double, Double)" Url="html/M_DotNetCoords_IrishRef__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c93dec87-8856-4c22-ba9e-32dc50bf44b3" Title="IrishRef Methods" Url="html/Methods_T_DotNetCoords_IrishRef.htm">
+        <HelpTOCNode Title="ToLatLng Method " Url="html/M_DotNetCoords_IrishRef_ToLatLng.htm" />
+        <HelpTOCNode Title="ToSixFigureString Method " Url="html/M_DotNetCoords_IrishRef_ToSixFigureString.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_DotNetCoords_IrishRef_ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="defedfae-f1fa-4f88-b25d-8ccf6131b48a" Title="IrishRef Properties" Url="html/Properties_T_DotNetCoords_IrishRef.htm">
+        <HelpTOCNode Title="Easting Property " Url="html/P_DotNetCoords_IrishRef_Easting.htm" />
+        <HelpTOCNode Title="Northing Property " Url="html/P_DotNetCoords_IrishRef_Northing.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="83ce8b0b-f640-4fad-ba02-3f720a057932" Title="LatLng Class" Url="html/T_DotNetCoords_LatLng.htm">
+      <HelpTOCNode Id="49734924-a709-48a5-a359-faeb92217cc5" Title="LatLng Constructor " Url="html/Overload_DotNetCoords_LatLng__ctor.htm">
+        <HelpTOCNode Title="LatLng Constructor (LatLng)" Url="html/M_DotNetCoords_LatLng__ctor.htm" />
+        <HelpTOCNode Title="LatLng Constructor (Double, Double)" Url="html/M_DotNetCoords_LatLng__ctor_1.htm" />
+        <HelpTOCNode Title="LatLng Constructor (Double, Double, Double)" Url="html/M_DotNetCoords_LatLng__ctor_2.htm" />
+        <HelpTOCNode Title="LatLng Constructor (Double, Double, Double, Datum)" Url="html/M_DotNetCoords_LatLng__ctor_3.htm" />
+        <HelpTOCNode Title="LatLng Constructor (Int32, Int32, Double, NorthSouth, Int32, Int32, Double, EastWest)" Url="html/M_DotNetCoords_LatLng__ctor_4.htm" />
+        <HelpTOCNode Title="LatLng Constructor (Int32, Int32, Double, NorthSouth, Int32, Int32, Double, EastWest, Double)" Url="html/M_DotNetCoords_LatLng__ctor_5.htm" />
+        <HelpTOCNode Title="LatLng Constructor (Int32, Int32, Double, NorthSouth, Int32, Int32, Double, EastWest, Double, Datum)" Url="html/M_DotNetCoords_LatLng__ctor_6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3b386d7d-534f-4700-a026-4092cb0291b2" Title="LatLng Methods" Url="html/Methods_T_DotNetCoords_LatLng.htm">
+        <HelpTOCNode Title="Distance Method " Url="html/M_DotNetCoords_LatLng_Distance.htm" />
+        <HelpTOCNode Title="DistanceMiles Method " Url="html/M_DotNetCoords_LatLng_DistanceMiles.htm" />
+        <HelpTOCNode Title="IsValidLatitude Method " Url="html/M_DotNetCoords_LatLng_IsValidLatitude.htm" />
+        <HelpTOCNode Title="IsValidLongitude Method " Url="html/M_DotNetCoords_LatLng_IsValidLongitude.htm" />
+        <HelpTOCNode Title="ToDatum Method " Url="html/M_DotNetCoords_LatLng_ToDatum.htm" />
+        <HelpTOCNode Title="ToDMSString Method " Url="html/M_DotNetCoords_LatLng_ToDMSString.htm" />
+        <HelpTOCNode Title="ToMGRSRef Method " Url="html/M_DotNetCoords_LatLng_ToMGRSRef.htm" />
+        <HelpTOCNode Title="ToOSGB36 Method " Url="html/M_DotNetCoords_LatLng_ToOSGB36.htm" />
+        <HelpTOCNode Title="ToOSRef Method " Url="html/M_DotNetCoords_LatLng_ToOSRef.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_DotNetCoords_LatLng_ToString.htm" />
+        <HelpTOCNode Title="ToUtmRef Method " Url="html/M_DotNetCoords_LatLng_ToUtmRef.htm" />
+        <HelpTOCNode Title="ToWGS84 Method " Url="html/M_DotNetCoords_LatLng_ToWGS84.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="57e82b0a-c96a-4471-9caf-cdd577e59323" Title="LatLng Properties" Url="html/Properties_T_DotNetCoords_LatLng.htm">
+        <HelpTOCNode Title="Datum Property " Url="html/P_DotNetCoords_LatLng_Datum.htm" />
+        <HelpTOCNode Title="Height Property " Url="html/P_DotNetCoords_LatLng_Height.htm" />
+        <HelpTOCNode Title="Latitude Property " Url="html/P_DotNetCoords_LatLng_Latitude.htm" />
+        <HelpTOCNode Title="LatitudeDegrees Property " Url="html/P_DotNetCoords_LatLng_LatitudeDegrees.htm" />
+        <HelpTOCNode Title="LatitudeMinutes Property " Url="html/P_DotNetCoords_LatLng_LatitudeMinutes.htm" />
+        <HelpTOCNode Title="LatitudeSeconds Property " Url="html/P_DotNetCoords_LatLng_LatitudeSeconds.htm" />
+        <HelpTOCNode Title="Longitude Property " Url="html/P_DotNetCoords_LatLng_Longitude.htm" />
+        <HelpTOCNode Title="LongitudeDegrees Property " Url="html/P_DotNetCoords_LatLng_LongitudeDegrees.htm" />
+        <HelpTOCNode Title="LongitudeMinutes Property " Url="html/P_DotNetCoords_LatLng_LongitudeMinutes.htm" />
+        <HelpTOCNode Title="LongitudeSeconds Property " Url="html/P_DotNetCoords_LatLng_LongitudeSeconds.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0debc41a-db50-4a6d-8188-29262d99e41a" Title="MGRSRef Class" Url="html/T_DotNetCoords_MGRSRef.htm">
+      <HelpTOCNode Id="cf3d3d51-2744-4d18-9bf6-1aabd73043e4" Title="MGRSRef Constructor " Url="html/Overload_DotNetCoords_MGRSRef__ctor.htm">
+        <HelpTOCNode Title="MGRSRef Constructor (String)" Url="html/M_DotNetCoords_MGRSRef__ctor_4.htm" />
+        <HelpTOCNode Title="MGRSRef Constructor (UTMRef)" Url="html/M_DotNetCoords_MGRSRef__ctor.htm" />
+        <HelpTOCNode Title="MGRSRef Constructor (String, Boolean)" Url="html/M_DotNetCoords_MGRSRef__ctor_5.htm" />
+        <HelpTOCNode Title="MGRSRef Constructor (UTMRef, Boolean)" Url="html/M_DotNetCoords_MGRSRef__ctor_1.htm" />
+        <HelpTOCNode Title="MGRSRef Constructor (Int32, Char, Char, Char, Int32, Int32, Precision)" Url="html/M_DotNetCoords_MGRSRef__ctor_2.htm" />
+        <HelpTOCNode Title="MGRSRef Constructor (Int32, Char, Char, Char, Int32, Int32, Precision, Boolean)" Url="html/M_DotNetCoords_MGRSRef__ctor_3.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="435c0759-d218-4dc6-9a47-93d92e5851d2" Title="MGRSRef Methods" Url="html/Methods_T_DotNetCoords_MGRSRef.htm">
+        <HelpTOCNode Title="IsBessel Method " Url="html/M_DotNetCoords_MGRSRef_IsBessel.htm" />
+        <HelpTOCNode Title="ToLatLng Method " Url="html/M_DotNetCoords_MGRSRef_ToLatLng.htm" />
+        <HelpTOCNode Id="f8053328-95f7-44bc-b8f1-f4c1425f68f0" Title="ToString Method " Url="html/Overload_DotNetCoords_MGRSRef_ToString.htm">
+          <HelpTOCNode Title="ToString Method " Url="html/M_DotNetCoords_MGRSRef_ToString.htm" />
+          <HelpTOCNode Title="ToString Method (Precision)" Url="html/M_DotNetCoords_MGRSRef_ToString_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ToUTMRef Method " Url="html/M_DotNetCoords_MGRSRef_ToUTMRef.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7513191e-daf7-4c38-a814-0efcec23c663" Title="MGRSRef Properties" Url="html/Properties_T_DotNetCoords_MGRSRef.htm">
+        <HelpTOCNode Title="Easting Property " Url="html/P_DotNetCoords_MGRSRef_Easting.htm" />
+        <HelpTOCNode Title="EastingId Property " Url="html/P_DotNetCoords_MGRSRef_EastingId.htm" />
+        <HelpTOCNode Title="Northing Property " Url="html/P_DotNetCoords_MGRSRef_Northing.htm" />
+        <HelpTOCNode Title="NorthingId Property " Url="html/P_DotNetCoords_MGRSRef_NorthingId.htm" />
+        <HelpTOCNode Title="Precision Property " Url="html/P_DotNetCoords_MGRSRef_Precision.htm" />
+        <HelpTOCNode Title="UtmZoneChar Property " Url="html/P_DotNetCoords_MGRSRef_UtmZoneChar.htm" />
+        <HelpTOCNode Title="UtmZoneNumber Property " Url="html/P_DotNetCoords_MGRSRef_UtmZoneNumber.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="NorthSouth Enumeration" Url="html/T_DotNetCoords_NorthSouth.htm" />
+    <HelpTOCNode Id="70131430-78cd-44de-8fc9-ee3b8066ec6c" Title="NotDefinedOnUtmGridException Class" Url="html/T_DotNetCoords_NotDefinedOnUtmGridException.htm">
+      <HelpTOCNode Id="01d3f6c7-48f7-4755-acdd-f0119705d58d" Title="NotDefinedOnUtmGridException Constructor " Url="html/Overload_DotNetCoords_NotDefinedOnUtmGridException__ctor.htm">
+        <HelpTOCNode Title="NotDefinedOnUtmGridException Constructor " Url="html/M_DotNetCoords_NotDefinedOnUtmGridException__ctor.htm" />
+        <HelpTOCNode Title="NotDefinedOnUtmGridException Constructor (String)" Url="html/M_DotNetCoords_NotDefinedOnUtmGridException__ctor_1.htm" />
+        <HelpTOCNode Title="NotDefinedOnUtmGridException Constructor (String, Exception)" Url="html/M_DotNetCoords_NotDefinedOnUtmGridException__ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="NotDefinedOnUtmGridException Methods" Url="html/Methods_T_DotNetCoords_NotDefinedOnUtmGridException.htm" />
+      <HelpTOCNode Title="NotDefinedOnUtmGridException Properties" Url="html/Properties_T_DotNetCoords_NotDefinedOnUtmGridException.htm" />
+      <HelpTOCNode Title="NotDefinedOnUtmGridException Events" Url="html/Events_T_DotNetCoords_NotDefinedOnUtmGridException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="56ba1735-9a23-4830-a624-cc6446879bfd" Title="OSRef Class" Url="html/T_DotNetCoords_OSRef.htm">
+      <HelpTOCNode Id="8f121a21-d4d8-4b17-8663-16a4ee6a7493" Title="OSRef Constructor " Url="html/Overload_DotNetCoords_OSRef__ctor.htm">
+        <HelpTOCNode Title="OSRef Constructor (String)" Url="html/M_DotNetCoords_OSRef__ctor_2.htm" />
+        <HelpTOCNode Title="OSRef Constructor (LatLng)" Url="html/M_DotNetCoords_OSRef__ctor.htm" />
+        <HelpTOCNode Title="OSRef Constructor (Double, Double)" Url="html/M_DotNetCoords_OSRef__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="75b0407f-7c68-4dbb-9f4f-c47297527925" Title="OSRef Methods" Url="html/Methods_T_DotNetCoords_OSRef.htm">
+        <HelpTOCNode Title="ToLatLng Method " Url="html/M_DotNetCoords_OSRef_ToLatLng.htm" />
+        <HelpTOCNode Title="ToSixFigureString Method " Url="html/M_DotNetCoords_OSRef_ToSixFigureString.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_DotNetCoords_OSRef_ToString.htm" />
+        <HelpTOCNode Title="ToTenFigureString Method " Url="html/M_DotNetCoords_OSRef_ToTenFigureString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="24e79015-2efc-4578-aecc-b2b9b935daa6" Title="OSRef Properties" Url="html/Properties_T_DotNetCoords_OSRef.htm">
+        <HelpTOCNode Title="Easting Property " Url="html/P_DotNetCoords_OSRef_Easting.htm" />
+        <HelpTOCNode Title="Northing Property " Url="html/P_DotNetCoords_OSRef_Northing.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Title="Precision Enumeration" Url="html/T_DotNetCoords_Precision.htm" />
+    <HelpTOCNode Id="e29cda20-a053-4214-bb77-81cf2204584f" Title="UTMRef Class" Url="html/T_DotNetCoords_UTMRef.htm">
+      <HelpTOCNode Id="4a982b8d-7e94-467c-b898-61779726c58e" Title="UTMRef Constructor " Url="html/Overload_DotNetCoords_UTMRef__ctor.htm">
+        <HelpTOCNode Title="UTMRef Constructor (Int32, Char, Double, Double)" Url="html/M_DotNetCoords_UTMRef__ctor.htm" />
+        <HelpTOCNode Title="UTMRef Constructor (Int32, Char, Double, Double, Datum)" Url="html/M_DotNetCoords_UTMRef__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d3e4cf56-17bd-46bf-8dde-f5a5acaf54de" Title="UTMRef Methods" Url="html/Methods_T_DotNetCoords_UTMRef.htm">
+        <HelpTOCNode Title="GetUTMLatitudeZoneLetter Method " Url="html/M_DotNetCoords_UTMRef_GetUTMLatitudeZoneLetter.htm" />
+        <HelpTOCNode Title="ToLatLng Method " Url="html/M_DotNetCoords_UTMRef_ToLatLng.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/M_DotNetCoords_UTMRef_ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cab550c3-d26b-4c1a-8fbf-8484943f9ca6" Title="UTMRef Properties" Url="html/Properties_T_DotNetCoords_UTMRef.htm">
+        <HelpTOCNode Title="Easting Property " Url="html/P_DotNetCoords_UTMRef_Easting.htm" />
+        <HelpTOCNode Title="LatZone Property " Url="html/P_DotNetCoords_UTMRef_LatZone.htm" />
+        <HelpTOCNode Title="LngZone Property " Url="html/P_DotNetCoords_UTMRef_LngZone.htm" />
+        <HelpTOCNode Title="Northing Property " Url="html/P_DotNetCoords_UTMRef_Northing.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="73d6a88a-9014-4a10-8c8d-f4ecdeb0fab6" Title="DotNetCoords.Datum" Url="html/N_DotNetCoords_Datum.htm">
+    <HelpTOCNode Id="384c1de9-4bc7-4f45-8377-1993aaf022b3" Title="Datum Class" Url="html/T_DotNetCoords_Datum_Datum.htm">
+      <HelpTOCNode Title="Datum Constructor " Url="html/M_DotNetCoords_Datum_Datum__ctor.htm" />
+      <HelpTOCNode Id="98df82e6-88bc-4309-82d9-afac8daa4d50" Title="Datum Methods" Url="html/Methods_T_DotNetCoords_Datum_Datum.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M_DotNetCoords_Datum_Datum_ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="384799c2-aaf1-4301-95a7-4f2b63104288" Title="Datum Properties" Url="html/Properties_T_DotNetCoords_Datum_Datum.htm">
+        <HelpTOCNode Title="DS Property " Url="html/P_DotNetCoords_Datum_Datum_DS.htm" />
+        <HelpTOCNode Title="DX Property " Url="html/P_DotNetCoords_Datum_Datum_DX.htm" />
+        <HelpTOCNode Title="DY Property " Url="html/P_DotNetCoords_Datum_Datum_DY.htm" />
+        <HelpTOCNode Title="DZ Property " Url="html/P_DotNetCoords_Datum_Datum_DZ.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P_DotNetCoords_Datum_Datum_Name.htm" />
+        <HelpTOCNode Title="ReferenceEllipsoid Property " Url="html/P_DotNetCoords_Datum_Datum_ReferenceEllipsoid.htm" />
+        <HelpTOCNode Title="RX Property " Url="html/P_DotNetCoords_Datum_Datum_RX.htm" />
+        <HelpTOCNode Title="RY Property " Url="html/P_DotNetCoords_Datum_Datum_RY.htm" />
+        <HelpTOCNode Title="RZ Property " Url="html/P_DotNetCoords_Datum_Datum_RZ.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="cd02be88-9562-4cad-a327-a1ad4c09f2b8" Title="Datum(T) Class" Url="html/T_DotNetCoords_Datum_Datum_1.htm">
+      <HelpTOCNode Title="Datum(T) Constructor " Url="html/M_DotNetCoords_Datum_Datum_1__ctor.htm" />
+      <HelpTOCNode Title="Datum(T) Methods" Url="html/Methods_T_DotNetCoords_Datum_Datum_1.htm" />
+      <HelpTOCNode Id="6aed56b8-42c3-495a-bc6d-46e17ed9d42d" Title="Datum(T) Properties" Url="html/Properties_T_DotNetCoords_Datum_Datum_1.htm">
+        <HelpTOCNode Title="Instance Property " Url="html/P_DotNetCoords_Datum_Datum_1_Instance.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2a867678-df72-426a-a393-143883fd3c01" Title="ED50Datum Class" Url="html/T_DotNetCoords_Datum_ED50Datum.htm">
+      <HelpTOCNode Title="ED50Datum Constructor " Url="html/M_DotNetCoords_Datum_ED50Datum__ctor.htm" />
+      <HelpTOCNode Title="ED50Datum Methods" Url="html/Methods_T_DotNetCoords_Datum_ED50Datum.htm" />
+      <HelpTOCNode Title="ED50Datum Properties" Url="html/Properties_T_DotNetCoords_Datum_ED50Datum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a2cde8f4-c9b9-47f9-8f43-7429c0cf978b" Title="ETRF89Datum Class" Url="html/T_DotNetCoords_Datum_ETRF89Datum.htm">
+      <HelpTOCNode Title="ETRF89Datum Constructor " Url="html/M_DotNetCoords_Datum_ETRF89Datum__ctor.htm" />
+      <HelpTOCNode Title="ETRF89Datum Methods" Url="html/Methods_T_DotNetCoords_Datum_ETRF89Datum.htm" />
+      <HelpTOCNode Title="ETRF89Datum Properties" Url="html/Properties_T_DotNetCoords_Datum_ETRF89Datum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="c8b15fad-751f-47a9-89ad-86d634ae050f" Title="Ireland1965Datum Class" Url="html/T_DotNetCoords_Datum_Ireland1965Datum.htm">
+      <HelpTOCNode Title="Ireland1965Datum Constructor " Url="html/M_DotNetCoords_Datum_Ireland1965Datum__ctor.htm" />
+      <HelpTOCNode Title="Ireland1965Datum Methods" Url="html/Methods_T_DotNetCoords_Datum_Ireland1965Datum.htm" />
+      <HelpTOCNode Title="Ireland1965Datum Properties" Url="html/Properties_T_DotNetCoords_Datum_Ireland1965Datum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fe2a550c-0536-454c-b25d-8b5b7395d49e" Title="OSGB36Datum Class" Url="html/T_DotNetCoords_Datum_OSGB36Datum.htm">
+      <HelpTOCNode Title="OSGB36Datum Constructor " Url="html/M_DotNetCoords_Datum_OSGB36Datum__ctor.htm" />
+      <HelpTOCNode Title="OSGB36Datum Methods" Url="html/Methods_T_DotNetCoords_Datum_OSGB36Datum.htm" />
+      <HelpTOCNode Title="OSGB36Datum Properties" Url="html/Properties_T_DotNetCoords_Datum_OSGB36Datum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ce56c287-3384-43b0-a4a2-34354c49efea" Title="WGS84Datum Class" Url="html/T_DotNetCoords_Datum_WGS84Datum.htm">
+      <HelpTOCNode Title="WGS84Datum Constructor " Url="html/M_DotNetCoords_Datum_WGS84Datum__ctor.htm" />
+      <HelpTOCNode Title="WGS84Datum Methods" Url="html/Methods_T_DotNetCoords_Datum_WGS84Datum.htm" />
+      <HelpTOCNode Title="WGS84Datum Properties" Url="html/Properties_T_DotNetCoords_Datum_WGS84Datum.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="05536c87-d054-4709-afd3-1edc91272cc1" Title="DotNetCoords.Datum.NAD27" Url="html/N_DotNetCoords_Datum_NAD27.htm">
+    <HelpTOCNode Id="9576d0ca-e486-4113-8161-05c45e07036d" Title="NAD27AlaskaDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27AlaskaDatum.htm">
+      <HelpTOCNode Title="NAD27AlaskaDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27AlaskaDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27AlaskaDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27AlaskaDatum.htm" />
+      <HelpTOCNode Title="NAD27AlaskaDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27AlaskaDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="44e54a58-2560-4dc3-9b50-1ebd6fb30763" Title="NAD27AlbertaBritishColumbiaDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27AlbertaBritishColumbiaDatum.htm">
+      <HelpTOCNode Title="NAD27AlbertaBritishColumbiaDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27AlbertaBritishColumbiaDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27AlbertaBritishColumbiaDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27AlbertaBritishColumbiaDatum.htm" />
+      <HelpTOCNode Title="NAD27AlbertaBritishColumbiaDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27AlbertaBritishColumbiaDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e9a0574c-1e9c-4e2d-844c-bb01375b4222" Title="NAD27AleutianEastDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27AleutianEastDatum.htm">
+      <HelpTOCNode Title="NAD27AleutianEastDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27AleutianEastDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27AleutianEastDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27AleutianEastDatum.htm" />
+      <HelpTOCNode Title="NAD27AleutianEastDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27AleutianEastDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="3224d470-412a-4b61-8667-eff6db5e1986" Title="NAD27AleutianWestDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27AleutianWestDatum.htm">
+      <HelpTOCNode Title="NAD27AleutianWestDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27AleutianWestDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27AleutianWestDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27AleutianWestDatum.htm" />
+      <HelpTOCNode Title="NAD27AleutianWestDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27AleutianWestDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ac306533-9bba-42fe-b867-df9262ef3e26" Title="NAD27BahamasDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27BahamasDatum.htm">
+      <HelpTOCNode Title="NAD27BahamasDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27BahamasDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27BahamasDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27BahamasDatum.htm" />
+      <HelpTOCNode Title="NAD27BahamasDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27BahamasDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b828fd4e-103b-4d00-8652-7135db07c5ea" Title="NAD27CanadaDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CanadaDatum.htm">
+      <HelpTOCNode Title="NAD27CanadaDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CanadaDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CanadaDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CanadaDatum.htm" />
+      <HelpTOCNode Title="NAD27CanadaDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CanadaDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="08612830-2d09-4f00-b6be-20807df215f9" Title="NAD27CanadaEastDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CanadaEastDatum.htm">
+      <HelpTOCNode Title="NAD27CanadaEastDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CanadaEastDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CanadaEastDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CanadaEastDatum.htm" />
+      <HelpTOCNode Title="NAD27CanadaEastDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CanadaEastDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="af234bc9-a8bb-4e87-b6a8-1716e4c6079b" Title="NAD27CanadaManitobaOntarioDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CanadaManitobaOntarioDatum.htm">
+      <HelpTOCNode Title="NAD27CanadaManitobaOntarioDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CanadaManitobaOntarioDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CanadaManitobaOntarioDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CanadaManitobaOntarioDatum.htm" />
+      <HelpTOCNode Title="NAD27CanadaManitobaOntarioDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CanadaManitobaOntarioDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="eef366cb-af6f-4998-a28f-fc11323cbd43" Title="NAD27CanadaNWTerritoryDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CanadaNWTerritoryDatum.htm">
+      <HelpTOCNode Title="NAD27CanadaNWTerritoryDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CanadaNWTerritoryDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CanadaNWTerritoryDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CanadaNWTerritoryDatum.htm" />
+      <HelpTOCNode Title="NAD27CanadaNWTerritoryDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CanadaNWTerritoryDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="081d9b32-bdea-482d-8eb4-9679ae1e53c3" Title="NAD27CanadaYukonDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CanadaYukonDatum.htm">
+      <HelpTOCNode Title="NAD27CanadaYukonDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CanadaYukonDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CanadaYukonDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CanadaYukonDatum.htm" />
+      <HelpTOCNode Title="NAD27CanadaYukonDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CanadaYukonDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="19444df9-d05d-48b3-8cf4-2a1b583290cd" Title="NAD27CanalZoneDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CanalZoneDatum.htm">
+      <HelpTOCNode Title="NAD27CanalZoneDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CanalZoneDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CanalZoneDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CanalZoneDatum.htm" />
+      <HelpTOCNode Title="NAD27CanalZoneDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CanalZoneDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="309ffbe5-9648-45a2-9bde-94f1c7e5b19f" Title="NAD27CaribbeanDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CaribbeanDatum.htm">
+      <HelpTOCNode Title="NAD27CaribbeanDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CaribbeanDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CaribbeanDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CaribbeanDatum.htm" />
+      <HelpTOCNode Title="NAD27CaribbeanDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CaribbeanDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="55fc2cbb-48de-47d2-8f07-6daf996563b6" Title="NAD27CentralAmericaDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CentralAmericaDatum.htm">
+      <HelpTOCNode Title="NAD27CentralAmericaDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CentralAmericaDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CentralAmericaDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CentralAmericaDatum.htm" />
+      <HelpTOCNode Title="NAD27CentralAmericaDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CentralAmericaDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="28d5b2fa-1aa8-48fd-b9fc-daf86e544cd3" Title="NAD27ContiguousUSDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27ContiguousUSDatum.htm">
+      <HelpTOCNode Title="NAD27ContiguousUSDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27ContiguousUSDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27ContiguousUSDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27ContiguousUSDatum.htm" />
+      <HelpTOCNode Title="NAD27ContiguousUSDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27ContiguousUSDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5cb7aeb5-3380-466e-b632-f2102ae6839b" Title="NAD27CubaDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27CubaDatum.htm">
+      <HelpTOCNode Title="NAD27CubaDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27CubaDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27CubaDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27CubaDatum.htm" />
+      <HelpTOCNode Title="NAD27CubaDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27CubaDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1c8cd802-9c61-4b9a-af24-524d8b8cbc43" Title="NAD27EasternUSDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27EasternUSDatum.htm">
+      <HelpTOCNode Title="NAD27EasternUSDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27EasternUSDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27EasternUSDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27EasternUSDatum.htm" />
+      <HelpTOCNode Title="NAD27EasternUSDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27EasternUSDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1249443a-511d-4355-961c-3cfce06ba2d9" Title="NAD27GreenlandDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27GreenlandDatum.htm">
+      <HelpTOCNode Title="NAD27GreenlandDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27GreenlandDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27GreenlandDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27GreenlandDatum.htm" />
+      <HelpTOCNode Title="NAD27GreenlandDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27GreenlandDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="8fa6f9b6-3ba0-4a2d-b102-b85de8f90be4" Title="NAD27MexicoDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27MexicoDatum.htm">
+      <HelpTOCNode Title="NAD27MexicoDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27MexicoDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27MexicoDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27MexicoDatum.htm" />
+      <HelpTOCNode Title="NAD27MexicoDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27MexicoDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6c6625a7-19c8-4893-b5a2-03479a09955a" Title="NAD27SanSalvadorDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27SanSalvadorDatum.htm">
+      <HelpTOCNode Title="NAD27SanSalvadorDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27SanSalvadorDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27SanSalvadorDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27SanSalvadorDatum.htm" />
+      <HelpTOCNode Title="NAD27SanSalvadorDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27SanSalvadorDatum.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="c4f3be74-4033-4e6d-92e2-5a40d873eccf" Title="NAD27WesternUSDatum Class" Url="html/T_DotNetCoords_Datum_NAD27_NAD27WesternUSDatum.htm">
+      <HelpTOCNode Title="NAD27WesternUSDatum Constructor " Url="html/M_DotNetCoords_Datum_NAD27_NAD27WesternUSDatum__ctor.htm" />
+      <HelpTOCNode Title="NAD27WesternUSDatum Methods" Url="html/Methods_T_DotNetCoords_Datum_NAD27_NAD27WesternUSDatum.htm" />
+      <HelpTOCNode Title="NAD27WesternUSDatum Properties" Url="html/Properties_T_DotNetCoords_Datum_NAD27_NAD27WesternUSDatum.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="adc4f461-c0a3-4c0f-b675-3116bb9af063" Title="DotNetCoords.Ellipsoid" Url="html/N_DotNetCoords_Ellipsoid.htm">
+    <HelpTOCNode Id="2a1e806d-96d9-4d15-9ad1-7790e6024720" Title="Airy1830Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Airy1830Ellipsoid.htm">
+      <HelpTOCNode Title="Airy1830Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Airy1830Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Airy1830Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Airy1830Ellipsoid.htm" />
+      <HelpTOCNode Title="Airy1830Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Airy1830Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="2385c5f7-b587-4309-8447-af4489acb5a9" Title="AustralianNational1966Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_AustralianNational1966Ellipsoid.htm">
+      <HelpTOCNode Title="AustralianNational1966Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_AustralianNational1966Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="AustralianNational1966Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_AustralianNational1966Ellipsoid.htm" />
+      <HelpTOCNode Title="AustralianNational1966Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_AustralianNational1966Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="cf327b92-5222-4406-b92f-3111b4907fe0" Title="Bessel1841Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Bessel1841Ellipsoid.htm">
+      <HelpTOCNode Title="Bessel1841Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Bessel1841Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Bessel1841Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Bessel1841Ellipsoid.htm" />
+      <HelpTOCNode Title="Bessel1841Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Bessel1841Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a9388c0b-939a-48b2-a785-79bbf4e3d5b4" Title="Clarke1866Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Clarke1866Ellipsoid.htm">
+      <HelpTOCNode Title="Clarke1866Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Clarke1866Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Clarke1866Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Clarke1866Ellipsoid.htm" />
+      <HelpTOCNode Title="Clarke1866Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Clarke1866Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="9028b4a9-12bf-41a2-b57a-17d137ec977d" Title="Clarke1880Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Clarke1880Ellipsoid.htm">
+      <HelpTOCNode Title="Clarke1880Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Clarke1880Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Clarke1880Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Clarke1880Ellipsoid.htm" />
+      <HelpTOCNode Title="Clarke1880Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Clarke1880Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="822396ec-2e07-41c7-8a05-8df9105380df" Title="Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Ellipsoid.htm">
+      <HelpTOCNode Id="2b2116b9-7361-41ab-86c5-bf1cd7ac1989" Title="Ellipsoid Constructor " Url="html/Overload_DotNetCoords_Ellipsoid_Ellipsoid__ctor.htm">
+        <HelpTOCNode Title="Ellipsoid Constructor (Double, Double)" Url="html/M_DotNetCoords_Ellipsoid_Ellipsoid__ctor.htm" />
+        <HelpTOCNode Title="Ellipsoid Constructor (Double, Double, Double)" Url="html/M_DotNetCoords_Ellipsoid_Ellipsoid__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8898935f-1a4e-4586-b0c5-5e46e6d7b052" Title="Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Ellipsoid.htm">
+        <HelpTOCNode Title="ToString Method " Url="html/M_DotNetCoords_Ellipsoid_Ellipsoid_ToString.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="41a4e54c-e3a9-43cf-b1ac-663cd0f74596" Title="Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Ellipsoid.htm">
+        <HelpTOCNode Title="EccentricitySquared Property " Url="html/P_DotNetCoords_Ellipsoid_Ellipsoid_EccentricitySquared.htm" />
+        <HelpTOCNode Title="Flattening Property " Url="html/P_DotNetCoords_Ellipsoid_Ellipsoid_Flattening.htm" />
+        <HelpTOCNode Title="SemiMajorAxis Property " Url="html/P_DotNetCoords_Ellipsoid_Ellipsoid_SemiMajorAxis.htm" />
+        <HelpTOCNode Title="SemiMinorAxis Property " Url="html/P_DotNetCoords_Ellipsoid_Ellipsoid_SemiMinorAxis.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b0c0c225-1b26-409c-8ead-f31558b888f8" Title="Ellipsoid(T) Class" Url="html/T_DotNetCoords_Ellipsoid_Ellipsoid_1.htm">
+      <HelpTOCNode Id="967c7bd1-48ee-4c5f-ace7-a3856b3b5ba7" Title="Ellipsoid(T) Constructor " Url="html/Overload_DotNetCoords_Ellipsoid_Ellipsoid_1__ctor.htm">
+        <HelpTOCNode Title="Ellipsoid(T) Constructor (Double, Double)" Url="html/M_DotNetCoords_Ellipsoid_Ellipsoid_1__ctor.htm" />
+        <HelpTOCNode Title="Ellipsoid(T) Constructor (Double, Double, Double)" Url="html/M_DotNetCoords_Ellipsoid_Ellipsoid_1__ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Ellipsoid(T) Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Ellipsoid_1.htm" />
+      <HelpTOCNode Id="4c9de7d2-8316-4139-a654-7774b0f83cb9" Title="Ellipsoid(T) Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Ellipsoid_1.htm">
+        <HelpTOCNode Title="Instance Property " Url="html/P_DotNetCoords_Ellipsoid_Ellipsoid_1_Instance.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="24bd6726-5f80-423e-8e94-9d043b2a9cbb" Title="EverestEllipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_EverestEllipsoid.htm">
+      <HelpTOCNode Title="EverestEllipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_EverestEllipsoid__ctor.htm" />
+      <HelpTOCNode Title="EverestEllipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_EverestEllipsoid.htm" />
+      <HelpTOCNode Title="EverestEllipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_EverestEllipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="06792360-ca97-4ec2-b7c1-410d6b0c5003" Title="Fischer1960Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Fischer1960Ellipsoid.htm">
+      <HelpTOCNode Title="Fischer1960Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Fischer1960Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Fischer1960Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Fischer1960Ellipsoid.htm" />
+      <HelpTOCNode Title="Fischer1960Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Fischer1960Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="3ccdbcf7-4891-49e7-869d-007e10fcb293" Title="Fischer1968Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Fischer1968Ellipsoid.htm">
+      <HelpTOCNode Title="Fischer1968Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Fischer1968Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Fischer1968Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Fischer1968Ellipsoid.htm" />
+      <HelpTOCNode Title="Fischer1968Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Fischer1968Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="bd41d6ad-8db6-48ea-8a32-102bb210c1f7" Title="GRS67Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_GRS67Ellipsoid.htm">
+      <HelpTOCNode Title="GRS67Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_GRS67Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="GRS67Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_GRS67Ellipsoid.htm" />
+      <HelpTOCNode Title="GRS67Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_GRS67Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a2641c59-69ec-469f-b473-4116cc039ea0" Title="GRS75Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_GRS75Ellipsoid.htm">
+      <HelpTOCNode Title="GRS75Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_GRS75Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="GRS75Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_GRS75Ellipsoid.htm" />
+      <HelpTOCNode Title="GRS75Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_GRS75Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0bd5d5e0-3740-4e9f-a2a6-4214699d4b0a" Title="GRS80Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_GRS80Ellipsoid.htm">
+      <HelpTOCNode Title="GRS80Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_GRS80Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="GRS80Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_GRS80Ellipsoid.htm" />
+      <HelpTOCNode Title="GRS80Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_GRS80Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b7350d72-44e8-4ef0-ba19-c0a797d374f9" Title="Hayford1910Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Hayford1910Ellipsoid.htm">
+      <HelpTOCNode Title="Hayford1910Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Hayford1910Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Hayford1910Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Hayford1910Ellipsoid.htm" />
+      <HelpTOCNode Title="Hayford1910Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Hayford1910Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="c6fc3d21-a1d5-4116-8c70-93ad420024a3" Title="Helmert1906Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Helmert1906Ellipsoid.htm">
+      <HelpTOCNode Title="Helmert1906Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Helmert1906Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Helmert1906Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Helmert1906Ellipsoid.htm" />
+      <HelpTOCNode Title="Helmert1906Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Helmert1906Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="20b3f504-c6e4-4244-ad66-b54e8c18588e" Title="Hough1956Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Hough1956Ellipsoid.htm">
+      <HelpTOCNode Title="Hough1956Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Hough1956Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Hough1956Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Hough1956Ellipsoid.htm" />
+      <HelpTOCNode Title="Hough1956Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Hough1956Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7e6189b0-341b-4750-a956-9554f468c41c" Title="IERS1989Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_IERS1989Ellipsoid.htm">
+      <HelpTOCNode Title="IERS1989Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_IERS1989Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="IERS1989Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_IERS1989Ellipsoid.htm" />
+      <HelpTOCNode Title="IERS1989Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_IERS1989Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="311dd589-ae56-4eda-a454-7519e3051b06" Title="InternationalEllipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_InternationalEllipsoid.htm">
+      <HelpTOCNode Title="InternationalEllipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_InternationalEllipsoid__ctor.htm" />
+      <HelpTOCNode Title="InternationalEllipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_InternationalEllipsoid.htm" />
+      <HelpTOCNode Title="InternationalEllipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_InternationalEllipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0bcb02c9-cc51-45ba-999f-a801b60a62ab" Title="Krassovsky1940Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_Krassovsky1940Ellipsoid.htm">
+      <HelpTOCNode Title="Krassovsky1940Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_Krassovsky1940Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="Krassovsky1940Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_Krassovsky1940Ellipsoid.htm" />
+      <HelpTOCNode Title="Krassovsky1940Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_Krassovsky1940Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fc61fd5b-7d4c-41cb-9ff3-d7b281b90d11" Title="ModifiedAiryEllipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_ModifiedAiryEllipsoid.htm">
+      <HelpTOCNode Title="ModifiedAiryEllipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_ModifiedAiryEllipsoid__ctor.htm" />
+      <HelpTOCNode Title="ModifiedAiryEllipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_ModifiedAiryEllipsoid.htm" />
+      <HelpTOCNode Title="ModifiedAiryEllipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_ModifiedAiryEllipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="d4718065-0a94-43c3-8e36-0bd4a2d926f9" Title="ModifiedEverestEllipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_ModifiedEverestEllipsoid.htm">
+      <HelpTOCNode Title="ModifiedEverestEllipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_ModifiedEverestEllipsoid__ctor.htm" />
+      <HelpTOCNode Title="ModifiedEverestEllipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_ModifiedEverestEllipsoid.htm" />
+      <HelpTOCNode Title="ModifiedEverestEllipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_ModifiedEverestEllipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="01979262-831f-4014-8cdb-96e7fd76eb0c" Title="NewInternational1967Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_NewInternational1967Ellipsoid.htm">
+      <HelpTOCNode Title="NewInternational1967Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_NewInternational1967Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="NewInternational1967Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_NewInternational1967Ellipsoid.htm" />
+      <HelpTOCNode Title="NewInternational1967Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_NewInternational1967Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="147ac788-c8dd-41e0-9cd4-3b37d7d397ff" Title="SouthAmerican1969Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_SouthAmerican1969Ellipsoid.htm">
+      <HelpTOCNode Title="SouthAmerican1969Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_SouthAmerican1969Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="SouthAmerican1969Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_SouthAmerican1969Ellipsoid.htm" />
+      <HelpTOCNode Title="SouthAmerican1969Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_SouthAmerican1969Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5b96ffc7-2517-4256-a0d8-e8fda57d6ddc" Title="WGS60Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_WGS60Ellipsoid.htm">
+      <HelpTOCNode Title="WGS60Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_WGS60Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="WGS60Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_WGS60Ellipsoid.htm" />
+      <HelpTOCNode Title="WGS60Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_WGS60Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="dadf6400-ab38-4099-b868-99fbadc8d03e" Title="WGS66Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_WGS66Ellipsoid.htm">
+      <HelpTOCNode Title="WGS66Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_WGS66Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="WGS66Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_WGS66Ellipsoid.htm" />
+      <HelpTOCNode Title="WGS66Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_WGS66Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6f652eb7-359d-4c83-b6b1-75e3522b08be" Title="WGS72Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_WGS72Ellipsoid.htm">
+      <HelpTOCNode Title="WGS72Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_WGS72Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="WGS72Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_WGS72Ellipsoid.htm" />
+      <HelpTOCNode Title="WGS72Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_WGS72Ellipsoid.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="729ad26e-f484-4de3-84cf-9735a2b6dbc9" Title="WGS84Ellipsoid Class" Url="html/T_DotNetCoords_Ellipsoid_WGS84Ellipsoid.htm">
+      <HelpTOCNode Title="WGS84Ellipsoid Constructor " Url="html/M_DotNetCoords_Ellipsoid_WGS84Ellipsoid__ctor.htm" />
+      <HelpTOCNode Title="WGS84Ellipsoid Methods" Url="html/Methods_T_DotNetCoords_Ellipsoid_WGS84Ellipsoid.htm" />
+      <HelpTOCNode Title="WGS84Ellipsoid Properties" Url="html/Properties_T_DotNetCoords_Ellipsoid_WGS84Ellipsoid.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

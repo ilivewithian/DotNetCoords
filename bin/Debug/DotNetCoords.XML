@@ -1,0 +1,2003 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DotNetCoords</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetCoords.CoordinateSystem">
+            <summary>
+            Base class for classes defining co-ordinate systems.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.CoordinateSystem.#ctor(DotNetCoords.Datum.Datum)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.CoordinateSystem"/> class.
+            </summary>
+            <param name="datum">The datum.</param>
+        </member>
+        <member name="M:DotNetCoords.CoordinateSystem.ToLatLng">
+            <summary>
+            Convert a co-ordinate in the co-ordinate system to a point represented
+            by a latitude and longitude and a perpendicular height above (or below) a
+            reference ellipsoid.
+            </summary>
+            <returns>A LatLng representation of a point in a co-ordinate system.</returns>
+        </member>
+        <member name="P:DotNetCoords.CoordinateSystem.Datum">
+            <summary>
+            Gets the datum.
+            </summary>
+            <value>The datum.</value>
+        </member>
+        <member name="T:DotNetCoords.Datum.Datum">
+            <summary>
+            The Datum class represents a set of parameters for describing a particular
+            datum, including a name, the reference ellipsoid used and the seven
+            parameters required to translate co-ordinates in this datum to the WGS84
+            datum.
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.Datum.Datum.dx">
+            Translation along the x-axis for use in 7-parameter Helmert
+            transformations. This value should be used to convert a co-ordinate in a
+            given datum to the WGS84 datum.
+        </member>
+        <member name="F:DotNetCoords.Datum.Datum.dy">
+            Translation along the y-axis for use in 7-parameter Helmert
+            transformations. This value should be used to convert a co-ordinate in a
+            given datum to the WGS84 datum.
+        </member>
+        <member name="F:DotNetCoords.Datum.Datum.dz">
+            Translation along the z-axis for use in 7-parameter Helmert
+            transformations. This value should be used to convert a co-ordinate in a
+            given datum to the WGS84 datum.
+        </member>
+        <member name="F:DotNetCoords.Datum.Datum.ds">
+            Scale factor for use in 7-parameter Helmert transformations. This value
+            should be used to convert a co-ordinate in a given datum to the WGS84
+            datum.
+        </member>
+        <member name="F:DotNetCoords.Datum.Datum.rx">
+            Rotation about the x-axis for use in 7-parameter Helmert transformations.
+            This value should be used to convert a co-ordinate in a given datum to the
+            WGS84 datum.
+        </member>
+        <member name="F:DotNetCoords.Datum.Datum.ry">
+            Rotation about the y-axis for use in 7-parameter Helmert transformations.
+            This value should be used to convert a co-ordinate in a given datum to the
+            WGS84 datum.
+        </member>
+        <member name="F:DotNetCoords.Datum.Datum.rz">
+            Rotation about the z-axis for use in 7-parameter Helmert transformations.
+            This value should be used to convert a co-ordinate in a given datum to the
+            WGS84 datum.
+        </member>
+        <member name="M:DotNetCoords.Datum.Datum.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the parameters of the current Datum object.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the parameters of the current Datum object.
+            </returns>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.Name">
+            <summary>
+            Get the name of this Datum.
+            </summary>
+            <value>The name of this Datum.</value>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.ReferenceEllipsoid">
+            <summary>
+            Get the reference ellipsoid associated with this Datum.
+            </summary>
+            <value>The reference ellipsoid associated with this Datum.</value>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.DS">
+            <summary>
+            Gets the scaling factor used by the Helmert Transformation when converting between datums.
+            </summary>
+            <value>The scaling factor.</value>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.DX">
+            <summary>
+            Gets the x parameter of the translation vector used by the Helmert Transformation when converting between datums.
+            </summary>
+            <value>The x parameter of the translation vector.</value>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.DY">
+            <summary>
+            Gets the y parameter of the translation vector used by the Helmert Transformation when converting between datums.
+            </summary>
+            <value>The y parameter of the translation vector.</value>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.DZ">
+            <summary>
+            Gets the z parameter of the translation vector used by the Helmert Transformation when converting between datums.
+            </summary>
+            <value>The z parameter of the translation vector.</value>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.RX">
+            <summary>
+            Gets the x parameter of the rotation matrix used by the Helmert Transformation when converting between datums.
+            </summary>
+            <value>The x parameter of the rotation matrix.</value>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.RY">
+            <summary>
+            Gets the y parameter of the rotation matrix used by the Helmert Transformation when converting between datums.
+            </summary>
+            <value>The y parameter of the rotation matrix.</value>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum.RZ">
+            <summary>
+            Gets the z parameter of the rotation matrix used by the Helmert Transformation when converting between datums.
+            </summary>
+            <value>The z parameter of the rotation matrix.</value>
+        </member>
+        <member name="T:DotNetCoords.Datum.Datum`1">
+            <summary>
+            Generic datum class represents a set of parameters for describing a particular
+            datum, including a name, the reference ellipsoid used and the seven
+            parameters required to translate co-ordinates in this datum to the WGS84
+            datum. 
+            </summary>
+            <typeparam name="T">The type of the datum</typeparam>
+        </member>
+        <member name="P:DotNetCoords.Datum.Datum`1.Instance">
+            <summary>
+            Get the static instance of this datum.
+            </summary>
+            <value>A reference to the static instance of this datum.</value>
+        </member>
+        <member name="T:DotNetCoords.Datum.ED50Datum">
+            <summary>
+            Class representing the European 1950 (ED50) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.ED50Datum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.ED50Datum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.ETRF89Datum">
+            <summary>
+            Class representing the European Terrestrial Reference Frame (ETRF89) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.ETRF89Datum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.ETRF89Datum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.Ireland1965Datum">
+            <summary>
+            Class representing the Ireland 1965 datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.Ireland1965Datum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.Ireland1965Datum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27AlaskaDatum">
+            <summary>
+            Class representing the NAD27 (Alaska) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27AlaskaDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27AlaskaDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27AlbertaBritishColumbiaDatum">
+            <summary>
+            Class representing the NAD27 (Alberta and British Columbia) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27AlbertaBritishColumbiaDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27AlbertaBritishColumbiaDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27AleutianEastDatum">
+            <summary>
+            Class representing the NAD27 (Aleutian East) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27AleutianEastDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27AleutianEastDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27AleutianWestDatum">
+            <summary>
+            Class representing the NAD27 (Aleutian West) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27AleutianWestDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27AleutianWestDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27BahamasDatum">
+            <summary>
+            Class representing the NAD27 (Bahamas) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27BahamasDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27BahamasDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CanadaDatum">
+            <summary>
+            Class representing the NAD27 (Canada) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CanadaDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CanadaDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CanadaEastDatum">
+            <summary>
+            Class representing the NAD27 (Canada East) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CanadaEastDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CanadaEastDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CanadaManitobaOntarioDatum">
+            <summary>
+            Class representing the NAD27 (Canada Manitoba/Ontario) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CanadaManitobaOntarioDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CanadaManitobaOntarioDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CanadaNWTerritoryDatum">
+            <summary>
+            Class representing the NAD27 (Canada NW Territory) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CanadaNWTerritoryDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CanadaNWTerritoryDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CanadaYukonDatum">
+            <summary>
+            Class representing the NAD27 (Canada Yukon) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CanadaYukonDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CanadaYukonDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CanalZoneDatum">
+            <summary>
+            Class representing the NAD27 (Canal Zone) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CanalZoneDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CanalZoneDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CaribbeanDatum">
+            <summary>
+            Class representing the NAD27 (Caribbean) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CaribbeanDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CaribbeanDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CentralAmericaDatum">
+            <summary>
+            Class representing the NAD27 (Central America) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CentralAmericaDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CentralAmericaDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27ContiguousUSDatum">
+            <summary>
+            Class representing the NAD27 (Contiguous United States) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27ContiguousUSDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27ContiguousUSDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27CubaDatum">
+            <summary>
+            Class representing the NAD27 (Cuba) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27CubaDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27CubaDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27EasternUSDatum">
+            <summary>
+            Class representing the NAD27 (Eastern US) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27EasternUSDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27EasternUSDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27GreenlandDatum">
+            <summary>
+            Class representing the NAD27 (Greenland) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27GreenlandDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27GreenlandDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27MexicoDatum">
+            <summary>
+            Class representing the NAD27 (Mexico) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27MexicoDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27MexicoDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27SanSalvadorDatum">
+            <summary>
+            Class representing the NAD27 (San Salvador) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27SanSalvadorDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27SanSalvadorDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.NAD27.NAD27WesternUSDatum">
+            <summary>
+            Class representing the NAD27 (Western US) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.NAD27.NAD27WesternUSDatum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.NAD27.NAD27WesternUSDatum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.OSGB36Datum">
+            <summary>
+            Class representing the Ordnance Survey of Great Britain 1936 (OSGB36) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.OSGB36Datum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.OSGB36Datum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Datum.WGS84Datum">
+            <summary>
+            Class representing the World Geodetic System 1984 (WGS84) datum.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Datum.WGS84Datum.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Datum.WGS84Datum"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.ECEFRef">
+            <summary>
+            ECEF (earth-centred, earth-fixed) Cartesian co-ordinates are used to define a
+            point in three-dimensional space. ECEF co-ordinates are defined relative to
+            an x-axis (the intersection of the equatorial plane and the plane defined by
+            the prime meridian), a y-axis (at 90° to the x-axis and its intersection
+            with the equator) and a z-axis (intersecting the North Pole). All the axes
+            intersect at the point defined by the centre of mass of the Earth.
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.ECEFRef.x">
+            x co-ordinate in metres.
+        </member>
+        <member name="F:DotNetCoords.ECEFRef.y">
+            y co-ordinate in metres.
+        </member>
+        <member name="F:DotNetCoords.ECEFRef.z">
+            z co-ordinate in metres.
+        </member>
+        <member name="M:DotNetCoords.ECEFRef.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Create a new earth-centred, earth-fixed (ECEF) reference from the given
+            parameters using the WGS84 reference ellipsoid.
+            </summary>
+            <param name="x">The x co-ordinate.</param>
+            <param name="y">The y co-ordinate.</param>
+            <param name="z">The z co-ordinate.</param>
+        </member>
+        <member name="M:DotNetCoords.ECEFRef.#ctor(System.Double,System.Double,System.Double,DotNetCoords.Datum.Datum)">
+            <summary>
+            Create a new earth-centred, earth-fixed (ECEF) reference from the given
+            parameters and the given reference ellipsoid.
+            </summary>
+            <param name="x">The x co-ordinate.</param>
+            <param name="y">The y co-ordinate.</param>
+            <param name="z">The z co-ordinate.</param>
+            <param name="datum">The datum.</param>
+        </member>
+        <member name="M:DotNetCoords.ECEFRef.#ctor(DotNetCoords.LatLng)">
+            <summary>
+            Create a new earth-centred, earth-fixed reference from the given latitude
+            and longitude.
+            </summary>
+            <param name="ll">The latitude and longitude.</param>
+        </member>
+        <member name="M:DotNetCoords.ECEFRef.ToLatLng">
+            <summary>
+            Convert this ECEFRef object to a point represented
+            by a latitude and longitude and a perpendicular height above (or below) a
+            reference ellipsoid.
+            </summary>
+            <returns>
+            The equivalent latitude and longitude.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.ECEFRef.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current ECEF reference.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current ECEF reference.
+            </returns>
+        </member>
+        <member name="P:DotNetCoords.ECEFRef.X">
+            <summary>
+            Gets or sets the x co-ordinate.
+            </summary>
+            <value>The x co-ordinate.</value>
+        </member>
+        <member name="P:DotNetCoords.ECEFRef.Y">
+            <summary>
+            Gets or sets the y co-ordinate.
+            </summary>
+            <value>The y co-ordinate.</value>
+        </member>
+        <member name="P:DotNetCoords.ECEFRef.Z">
+            <summary>
+            Gets or sets the the z co-ordinate.
+            </summary>
+            <value>The the z co-ordinate.</value>
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Airy1830Ellipsoid">
+            <summary>
+            Class defining the Airy 1830 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Ellipsoid`1">
+            <summary>
+            Generic class to represent a reference ellipsoid.
+            </summary>
+            <typeparam name="T">The type of the ellipsoid</typeparam>
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Ellipsoid">
+            <summary>
+            Class to represent a reference ellipsoid.
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.Ellipsoid.Ellipsoid.semiMajorAxis">
+            Semi major axis.
+        </member>
+        <member name="F:DotNetCoords.Ellipsoid.Ellipsoid.semiMinorAxis">
+            Semi minor axis.
+        </member>
+        <member name="F:DotNetCoords.Ellipsoid.Ellipsoid.eccentricitySquared">
+            Eccentricity squared.
+        </member>
+        <member name="F:DotNetCoords.Ellipsoid.Ellipsoid.flattening">
+            Flattening.
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Ellipsoid.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Ellipsoid.Ellipsoid"/> class.
+            </summary>
+            <param name="semiMajorAxis">The semi major axis.</param>
+            <param name="semiMinorAxis">The semi minor axis.</param>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Ellipsoid.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Ellipsoid.Ellipsoid"/> class. If either the
+            semiMinorAxis or the eccentricitySquared are Double.NaN, then that value is
+            calculated from the other two parameters. An ArgumentException is
+            thrown if both the semiMinorAxis and the eccentricitySquared are
+            Double.NaN.
+            </summary>
+            <param name="semiMajorAxis">The semi major axis.</param>
+            <param name="semiMinorAxis">The semi minor axis.</param>
+            <param name="eccentricitySquared">The eccentricity squared.</param>
+            <exception cref="T:System.ArgumentException"/>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Ellipsoid.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current Ellipsoid.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current Ellipsoid.
+            </returns>
+        </member>
+        <member name="P:DotNetCoords.Ellipsoid.Ellipsoid.EccentricitySquared">
+            <summary>
+            Gets the eccentricity squared.
+            </summary>
+            <value>The eccentricity squared.</value>
+        </member>
+        <member name="P:DotNetCoords.Ellipsoid.Ellipsoid.Flattening">
+            <summary>
+            Gets the flattening.
+            </summary>
+            <value>The flattening.</value>
+        </member>
+        <member name="P:DotNetCoords.Ellipsoid.Ellipsoid.SemiMajorAxis">
+            <summary>
+            Gets the semi major axis.
+            </summary>
+            <value>The semi major axis.</value>
+        </member>
+        <member name="P:DotNetCoords.Ellipsoid.Ellipsoid.SemiMinorAxis">
+            <summary>
+            Gets the semi minor axis.
+            </summary>
+            <value>The semi minor axis.</value>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Ellipsoid`1.#ctor(System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Ellipsoid.Ellipsoid`1"/> class.
+            </summary>
+            <param name="semiMajorAxis">The semi major axis.</param>
+            <param name="semiMinorAxis">The semi minor axis.</param>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Ellipsoid`1.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Ellipsoid.Ellipsoid`1"/> class.
+            </summary>
+            <param name="semiMajorAxis">The semi major axis.</param>
+            <param name="semiMinorAxis">The semi minor axis.</param>
+            <param name="eccentricitySquared">The eccentricity squared.</param>
+        </member>
+        <member name="P:DotNetCoords.Ellipsoid.Ellipsoid`1.Instance">
+            <summary>
+            Get the static instance of this ellipsoid.
+            </summary>
+            <value>A reference to the static instance of this ellipsoid.</value>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Airy1830Ellipsoid.#ctor">
+            Create an object defining the Airy 1830 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.AustralianNational1966Ellipsoid">
+            <summary>
+            Class defining the Australian National 1966 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.AustralianNational1966Ellipsoid.#ctor">
+            Create an object defining the Australian National 1966 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Bessel1841Ellipsoid">
+            <summary>
+            Class defining the Bessel 1841 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Bessel1841Ellipsoid.#ctor">
+            Create an object defining the Bessel 1841 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Clarke1866Ellipsoid">
+            <summary>
+            Class defining the Clarke 1866 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Clarke1866Ellipsoid.#ctor">
+            Create an object defining the Clarke 1866 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Clarke1880Ellipsoid">
+            <summary>
+            Class defining the Clarke 1880 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Clarke1880Ellipsoid.#ctor">
+            Create an object defining the Clarke 1880 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.EverestEllipsoid">
+            <summary>
+            Class defining the Everest 1830 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.EverestEllipsoid.#ctor">
+            Create an object defining the Everest 1830 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Fischer1960Ellipsoid">
+            <summary>
+            Class defining the Fischer 1960 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Fischer1960Ellipsoid.#ctor">
+            Create an object defining the Fischer 1960 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Fischer1968Ellipsoid">
+            <summary>
+            Class defining the Fischer 1968 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Fischer1968Ellipsoid.#ctor">
+            Create an object defining the Fischer 1968 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.GRS67Ellipsoid">
+            <summary>
+            Class defining the GRS67 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.GRS67Ellipsoid.#ctor">
+            Create an object defining the GRS67 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.GRS75Ellipsoid">
+            <summary>
+            Class defining the GRS75 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.GRS75Ellipsoid.#ctor">
+            Create an object defining the GRS75 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.GRS80Ellipsoid">
+            <summary>
+            Class defining the GRS80 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.GRS80Ellipsoid.#ctor">
+            Create an object defining the GRS80 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Hayford1910Ellipsoid">
+            <summary>
+            Class defining the Hayford 1910 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Hayford1910Ellipsoid.#ctor">
+            Create an object defining the Hayford 1910 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Helmert1906Ellipsoid">
+            <summary>
+            Class defining the Helmert 1906 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Helmert1906Ellipsoid.#ctor">
+            Create an object defining the Helmert 1906 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Hough1956Ellipsoid">
+            <summary>
+            Class defining the Hough 1956 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Hough1956Ellipsoid.#ctor">
+            Create an object defining the Hough 1956 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.IERS1989Ellipsoid">
+            <summary>
+            Class defining the IERS 1989 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.IERS1989Ellipsoid.#ctor">
+            Create an object defining the IERS 1989 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.InternationalEllipsoid">
+            <summary>
+            Class defining the International 1909 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.InternationalEllipsoid.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.Ellipsoid.InternationalEllipsoid"/> class.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.Krassovsky1940Ellipsoid">
+            <summary>
+            Class defining the Krassovsky 1940 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.Krassovsky1940Ellipsoid.#ctor">
+            Create an object defining the Krassovsky 1940 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.ModifiedAiryEllipsoid">
+            <summary>
+            Class defining the Modified Airy reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.ModifiedAiryEllipsoid.#ctor">
+            Create an object defining the Modified Airy reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.ModifiedEverestEllipsoid">
+            <summary>
+            Class defining the Modified Everest reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.ModifiedEverestEllipsoid.#ctor">
+            Create an object defining the Modified Everest reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.NewInternational1967Ellipsoid">
+            <summary>
+            Class defining the New International 1967 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.NewInternational1967Ellipsoid.#ctor">
+            Create an object defining the Ne wInternational 1967 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.SouthAmerican1969Ellipsoid">
+            <summary>
+            Class defining the South American 1969 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.SouthAmerican1969Ellipsoid.#ctor">
+            Create an object defining the South American 1969 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.WGS60Ellipsoid">
+            <summary>
+            Class defining the WGS60 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.WGS60Ellipsoid.#ctor">
+            Create an object defining the WGS60 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.WGS66Ellipsoid">
+            <summary>
+            Class defining the WGS66 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.WGS66Ellipsoid.#ctor">
+            Create an object defining the WGS66 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.WGS72Ellipsoid">
+            <summary>
+            Class defining the WGS72 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.WGS72Ellipsoid.#ctor">
+            Create an object defining the WGS72 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.Ellipsoid.WGS84Ellipsoid">
+            <summary>
+            Class defining the WGS84 reference ellipsoid.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.Ellipsoid.WGS84Ellipsoid.#ctor">
+            Create an object defining a WGS84 reference ellipsoid.
+            
+            @since 1.1
+        </member>
+        <member name="T:DotNetCoords.IrishRef">
+            <summary>
+            Class to represent an Irish National Grid reference.
+            <p>
+            	<b>Irish National Grid</b><br/>
+            	<ul>
+            		<li>Projection: Transverse Mercator</li>
+            		<li>Reference ellipsoid: Modified Airy</li>
+            		<li>Units: metres</li>
+            		<li>Origin: 53°30'N, 8°W</li>
+            		<li>False co-ordinates of origin: 200000m east, 250000m north</li>
+            	</ul>
+            </p>
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.IrishRef.easting">
+            The easting in metres relative to the origin of the British National Grid.
+        </member>
+        <member name="F:DotNetCoords.IrishRef.northing">
+            The northing in metres relative to the origin of the British National Grid.
+        </member>
+        <member name="M:DotNetCoords.IrishRef.#ctor(System.Double,System.Double)">
+            <summary>
+            Create a new Ordnance Survey grid reference using a given easting and
+            northing. The easting and northing must be in metres and must be relative
+            to the origin of the British National Grid.
+            </summary>
+            <param name="easting">the easting in metres. Must be greater than or equal to 0.0 and
+            less than 800000.0.</param>
+            <param name="northing">the northing in metres. Must be greater than or equal to 0.0 and
+            less than 1400000.0.</param>
+        </member>
+        <member name="M:DotNetCoords.IrishRef.#ctor(System.String)">
+            <summary>
+            Take a string formatted as a six-figure OS grid reference (e.g. "TG514131")
+            and create a new OSRef object that represents that grid reference. The
+            first character must be H, N, S, O or T. The second character can be any
+            uppercase character from A through Z excluding I.
+            </summary>
+            <param name="gridRef">A string representing a six-figure Ordnance Survey grid reference
+            in the form XY123456</param>
+        </member>
+        <member name="M:DotNetCoords.IrishRef.#ctor(DotNetCoords.LatLng)">
+            <summary>
+            Create an IrishRef object from the given latitude and longitude.
+            </summary>
+            <param name="ll">The latitude and longitude.</param>
+        </member>
+        <member name="M:DotNetCoords.IrishRef.ToString">
+            <summary>
+            Return a String representation of this Irish grid reference showing the
+            easting and northing in metres.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current Irish grid reference.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.IrishRef.ToSixFigureString">
+            <summary>
+            Return a String representation of this Irish grid reference using the
+            six-figure notation in the form X123456
+            </summary>
+            <returns>A string representing this Irish grid reference in six-figure
+            notation</returns>
+        </member>
+        <member name="M:DotNetCoords.IrishRef.ToLatLng">
+            <summary>
+            Convert this Irish grid reference to a latitude/longitude pair using the
+            Ireland 1965 datum. Note that, the LatLng object may need to be converted to the
+            WGS84 datum depending on the application.
+            </summary>
+            <returns>
+            A LatLng object representing this Irish grid reference using the
+            Ireland 1965 datum
+            </returns>
+        </member>
+        <member name="P:DotNetCoords.IrishRef.Easting">
+            <summary>
+            Gets or sets the easting in metres relative to the origin of the Irish Grid.
+            </summary>
+            <value>The easting.</value>
+        </member>
+        <member name="P:DotNetCoords.IrishRef.Northing">
+            <summary>
+            Gets or sets the northing in metres relative to the origin of the Irish
+            Grid.
+            </summary>
+            <value>The northing.</value>
+        </member>
+        <member name="T:DotNetCoords.NorthSouth">
+            <summary>
+            Enumerated type defining whether a latitude is North or South of the equator
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.NorthSouth.North">
+            <summary>
+            Latitude is north of the equator.
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.NorthSouth.South">
+            <summary>
+            Latitude is south of the equator.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.EastWest">
+            <summary>
+            Enumerated type defining whether a longitude is east or west of the prime meridian
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.EastWest.East">
+            <summary>
+            Longitude is east of the prime meridian
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.EastWest.West">
+            <summary>
+            Longitude is west of the prime meridian
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.LatLng">
+            <summary>
+            Class to represent a latitude/longitude pair based on a particular datum.
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.LatLng.latitude">
+            Latitude in degrees.
+        </member>
+        <member name="F:DotNetCoords.LatLng.longitude">
+            Longitude in degrees.
+        </member>
+        <member name="F:DotNetCoords.LatLng.height">
+            Height.
+        </member>
+        <member name="F:DotNetCoords.LatLng.datum">
+            Datum of this reference.
+        </member>
+        <member name="M:DotNetCoords.LatLng.#ctor(DotNetCoords.LatLng)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.LatLng"/> class based on another <see cref="T:DotNetCoords.LatLng"/> instance.
+            </summary>
+            <param name="original">The original <see cref="T:DotNetCoords.LatLng"/> instance.</param>
+        </member>
+        <member name="M:DotNetCoords.LatLng.#ctor(System.Double,System.Double)">
+            <summary>
+            Create a new LatLng object to represent a latitude/longitude pair using the
+            WGS84 datum.
+            </summary>
+            <param name="latitude">The latitude in degrees. Must be between -90.0 and 90.0 inclusive.
+            -90.0 and 90.0 are effectively equivalent.</param>
+            <param name="longitude">The longitude in degrees. Must be between -180.0 and 180.0
+            inclusive. -180.0 and 180.0 are effectively equivalent.</param>
+            <exception cref="T:System.ArgumentException">If either the given latitude or the given longitude are invalid.</exception>
+        </member>
+        <member name="M:DotNetCoords.LatLng.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Create a new LatLng object to represent a latitude/longitude pair using the
+            WGS84 datum.
+            </summary>
+            <param name="latitude">The latitude in degrees. Must be between -90.0 and 90.0 inclusive.
+            -90.0 and 90.0 are effectively equivalent.</param>
+            <param name="longitude">The longitude in degrees. Must be between -180.0 and 180.0
+            inclusive. -180.0 and 180.0 are effectively equivalent.</param>
+            <param name="height">The perpendicular height above the reference ellipsoid.</param>
+            <exception cref="T:System.ArgumentException">If either the given latitude or the given longitude are invalid.</exception>
+        </member>
+        <member name="M:DotNetCoords.LatLng.#ctor(System.Int32,System.Int32,System.Double,DotNetCoords.NorthSouth,System.Int32,System.Int32,System.Double,DotNetCoords.EastWest)">
+            <summary>
+            Create a new LatLng object to represent a latitude/longitude pair using the
+            WGS84 datum.
+            </summary>
+            <param name="latitudeDegrees">The degrees part of the latitude. Must be 0 &lt;= latitudeDegrees &lt;=
+            90.0.</param>
+            <param name="latitudeMinutes">The minutes part of the latitude. Must be 0 &lt;= latitudeMinutes &lt;
+            60.0.</param>
+            <param name="latitudeSeconds">The seconds part of the latitude. Must be 0 &lt;= latitudeSeconds &lt;
+            60.0.</param>
+            <param name="northSouth">Whether the latitude is north or south of the equator.</param>
+            <param name="longitudeDegrees">The degrees part of the longitude. Must be 0 &lt;= longitudeDegrees &lt;=
+            180.0.</param>
+            <param name="longitudeMinutes">The minutes part of the longitude. Must be 0 &lt;= longitudeMinutes &lt;
+            60.0.</param>
+            <param name="longitudeSeconds">The seconds part of the longitude. Must be 0 &lt;= longitudeSeconds &lt;
+            60.0.</param>
+            <param name="eastWest">Whether the longitude is east or west of the prime meridian.</param>
+            <exception cref="T:System.ArgumentException">If any of the parameters are invalid.</exception>
+        </member>
+        <member name="M:DotNetCoords.LatLng.#ctor(System.Int32,System.Int32,System.Double,DotNetCoords.NorthSouth,System.Int32,System.Int32,System.Double,DotNetCoords.EastWest,System.Double)">
+            <summary>
+            Create a new LatLng object to represent a latitude/longitude pair using the
+            WGS84 datum.
+            </summary>
+            <param name="latitudeDegrees">The degrees part of the latitude. Must be 0 &lt;= latitudeDegrees &lt;=
+            90.0.</param>
+            <param name="latitudeMinutes">The minutes part of the latitude. Must be 0 &lt;= latitudeMinutes &lt;
+            60.0.</param>
+            <param name="latitudeSeconds">The seconds part of the latitude. Must be 0 &lt;= latitudeSeconds &lt;
+            60.0.</param>
+            <param name="northSouth">Whether the latitude is north or south of the equator.</param>
+            <param name="longitudeDegrees">The degrees part of the longitude. Must be 0 &lt;= longitudeDegrees &lt;=
+            180.0.</param>
+            <param name="longitudeMinutes">The minutes part of the longitude. Must be 0 &lt;= longitudeMinutes &lt;
+            60.0.</param>
+            <param name="longitudeSeconds">The seconds part of the longitude. Must be 0 &lt;= longitudeSeconds &lt;
+            60.0.</param>
+            <param name="eastWest">Whether the longitude is east or west of the prime meridian.</param>
+            <param name="height">The perpendicular height above the reference ellipsoid.</param>
+            <exception cref="T:System.ArgumentException">if any of the parameters are invalid.</exception>
+        </member>
+        <member name="M:DotNetCoords.LatLng.#ctor(System.Int32,System.Int32,System.Double,DotNetCoords.NorthSouth,System.Int32,System.Int32,System.Double,DotNetCoords.EastWest,System.Double,DotNetCoords.Datum.Datum)">
+            <summary>
+            Create a new LatLng object to represent a latitude/longitude pair using the
+            specified datum.
+            </summary>
+            <param name="latitudeDegrees">The degrees part of the latitude. Must be 0 &lt;= latitudeDegrees &lt;=
+            90.0.</param>
+            <param name="latitudeMinutes">The minutes part of the latitude. Must be 0 &lt;= latitudeMinutes &lt;
+            60.0.</param>
+            <param name="latitudeSeconds">The seconds part of the latitude. Must be 0 &lt;= latitudeSeconds &lt;
+            60.0.</param>
+            <param name="northSouth">Whether the latitude is north or south of the equator.</param>
+            <param name="longitudeDegrees">The degrees part of the longitude. Must be 0 &lt;= longitudeDegrees &lt;=
+            180.0.</param>
+            <param name="longitudeMinutes">The minutes part of the longitude. Must be 0 &lt;= longitudeMinutes &lt;
+            60.0.</param>
+            <param name="longitudeSeconds">The seconds part of the longitude. Must be 0 &lt;= longitudeSeconds &lt;
+            60.0.</param>
+            <param name="eastWest">Whether the longitude is east or west of the prime meridian.</param>
+            <param name="height">The perpendicular height above the reference ellipsoid.</param>
+            <param name="datum">The datum that this reference is based on.</param>
+            <exception cref="T:System.ArgumentException">if any of the parameters are invalid.</exception>
+        </member>
+        <member name="M:DotNetCoords.LatLng.#ctor(System.Double,System.Double,System.Double,DotNetCoords.Datum.Datum)">
+            <summary>
+            Create a new LatLng object to represent a latitude/longitude pair using the
+            specified datum.
+            </summary>
+            <param name="latitude">The latitude in degrees. Must be between -90.0 and 90.0 inclusive.
+            -90.0 and 90.0 are effectively equivalent.</param>
+            <param name="longitude">The longitude in degrees. Must be between -180.0 and 180.0
+            inclusive. -180.0 and 180.0 are effectively equivalent.</param>
+            <param name="height">The perpendicular height above the reference ellipsoid.</param>
+            <param name="datum">The datum that this reference is based on.</param>
+            <exception cref="T:System.ArgumentException">If either the given latitude or the given longitude are invalid.</exception>
+        </member>
+        <member name="M:DotNetCoords.LatLng.IsValidLatitude(System.Double)">
+            <summary>
+            Determines whether the specified latitude is valid.
+            </summary>
+            <param name="latitude">The latitude.</param>
+            <returns>
+            	<c>true</c> if the latitude is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.LatLng.IsValidLongitude(System.Double)">
+            <summary>
+            Determines whether the specified longitude is valid longitude.
+            </summary>
+            <param name="longitude">The longitude.</param>
+            <returns>
+            	<c>true</c> if the longitude is valid; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.LatLng.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current LatLng object.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current LatLng object.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.LatLng.ToDMSString">
+            <summary>
+            Return a String representation of this LatLng object in
+            degrees-minutes-seconds format. The returned format will be like this: DD
+            MM SS.SSS N DD MM SS.SSS E where DD is the number of degrees, MM is the
+            number of minutes, SS.SSS is the number of seconds, N is either N or S to
+            indicate north or south of the equator and E is either E or W to indicate
+            east or west of the prime meridian.
+            </summary>
+            <returns>A string representation of this LatLng object in DMS format.</returns>
+        </member>
+        <member name="M:DotNetCoords.LatLng.ToOSRef">
+            <summary>
+            Convert this latitude and longitude into an OSGB (Ordnance Survey of Great
+            Britain) grid reference.
+            </summary>
+            <returns>The converted OSGB grid reference.</returns>
+        </member>
+        <member name="M:DotNetCoords.LatLng.ToUtmRef">
+            <summary>
+            Convert this latitude and longitude to a UTM reference.
+            </summary>
+            <returns>The converted UTM reference.</returns>
+            <exception cref="T:DotNetCoords.NotDefinedOnUtmGridException">
+            If an attempt is made to convert a LatLng that falls outside the
+            area covered by the UTM grid. The UTM grid is only defined for
+            latitudes south of 84°N and north of 80°S.</exception>
+        </member>
+        <member name="M:DotNetCoords.LatLng.ToMGRSRef">
+            <summary>
+            Convert this latitude and longitude to an MGRS reference.
+            </summary>
+            <returns>The converted MGRS reference</returns>
+        </member>
+        <member name="M:DotNetCoords.LatLng.ToWGS84">
+            <summary>
+            Convert this LatLng from the OSGB36 datum to the WGS84 datum using an
+            approximate Helmert transformation.
+            </summary>   
+        </member>
+        <member name="M:DotNetCoords.LatLng.ToDatum(DotNetCoords.Datum.Datum)">
+            <summary>
+            Converts this LatLng to another datum.
+            </summary>
+            <param name="d">The datum.</param>
+        </member>
+        <member name="M:DotNetCoords.LatLng.ToOSGB36">
+            <summary>
+            Convert this LatLng from the WGS84 datum to the OSGB36 datum using an
+            approximate Helmert transformation.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.LatLng.Distance(DotNetCoords.LatLng)">
+            <summary>
+            Calculate the surface distance in kilometres from this LatLng to the given
+            LatLng.
+            </summary>
+            <param name="ll">The LatLng object to measure the distance to..</param>
+            <returns>The surface distance in kilometres.</returns>
+        </member>
+        <member name="M:DotNetCoords.LatLng.DistanceMiles(DotNetCoords.LatLng)">
+            <summary>
+            Calculate the surface distance in miles from this LatLng to the given
+            LatLng.
+            </summary>
+            <param name="ll">The LatLng object to measure the distance to.</param>
+            <returns>The surface distance in miles.</returns>
+        </member>
+        <member name="P:DotNetCoords.LatLng.Latitude">
+            <summary>
+            Gets the latitude in degrees.
+            </summary>
+            <value>The latitude in degrees.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.LatitudeDegrees">
+            <summary>
+            Gets the latitude degrees.
+            </summary>
+            <value>The latitude degrees.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.LatitudeMinutes">
+            <summary>
+            Gets the latitude minutes.
+            </summary>
+            <value>The latitude minutes.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.LatitudeSeconds">
+            <summary>
+            Gets the latitude seconds.
+            </summary>
+            <value>The latitude seconds.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.Longitude">
+            <summary>
+            Gets the longitude in degrees.
+            </summary>
+            <value>The longitude in degrees.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.LongitudeDegrees">
+            <summary>
+            Gets the longitude degrees.
+            </summary>
+            <value>The longitude degrees.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.LongitudeMinutes">
+            <summary>
+            Gets the longitude minutes.
+            </summary>
+            <value>The longitude minutes.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.LongitudeSeconds">
+            <summary>
+            Gets the longitude seconds.
+            </summary>
+            <value>The longitude seconds.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.Height">
+            <summary>
+            Gets the height.
+            </summary>
+            <value>The height.</value>
+        </member>
+        <member name="P:DotNetCoords.LatLng.Datum">
+            <summary>
+            Gets the datum.
+            </summary>
+            <value>The datum.</value>
+        </member>
+        <member name="T:DotNetCoords.Precision">
+            <summary>
+            Enumerated type used to indicate the required precision
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.Precision.Precision10000M">
+            <summary>
+            Used to indicate a required precision of 10000m (10km).
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.Precision.Precision1000M">
+            <summary>
+            Used to indicate a required precision of 1000m (1km).
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.Precision.Precision100M">
+            <summary>
+            Used to indicate a required precision of 100m.
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.Precision.Precision10M">
+            <summary>
+            Used to indicate a required precision of 10m.
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.Precision.Precision1M">
+            <summary>
+            Used to indicate a required precision of 1m.
+            </summary>
+        </member>
+        <member name="T:DotNetCoords.MGRSRef">
+            <summary>
+            Class to represent a Military Grid Reference System (MGRS) reference.
+            <p>
+            	<h3>Military Grid Reference System (MGRS)</h3>
+            </p>
+            <p>
+            The Military Grid Reference System (MGRS) is an extension of the Universal
+            Transverse Mercator (UTM) reference system. An MGRS reference is made from 5
+            parts:
+            </p>
+            <h4>UTM Longitude Zone</h4>
+            <p>
+            This is a number indicating which UTM longitude zone the reference falls
+            into. Zones are numbered from 1 (starting at 180°W) through 60. Each zone
+            is 6° wide.
+            </p>
+            <h4>UTM Latitude Zone</h4>
+            <p>
+            Latitude is split into regions that are 8° high, starting at 80°S.
+            Latitude zones are lettered using C through X, but omitting I and O as they
+            can easily be confused with the numbers 1 and 0.
+            </p>
+            <h4>100,000m Square identification</h4>
+            <p>
+            Each UTM zone is treated as a square 100,000m to a side. The 50,000m easting
+            is centred on the centre-point of the UTM zone. 100,000m squares are
+            identified using two characters - one to identify the row and one to identify
+            the column.
+            </p>
+            <p>
+            Row identifiers use the characters A through V (omitting I and O again). The
+            sequence is repeated every 2,000,000m from the equator. If the UTM longitude
+            zone is odd, then the lettering is advanced by five characters to start at F.
+            </p>
+            <p>
+            Column identifiers use the characters A through Z (again omitting I and O).
+            </p>
+            <h4>Easting and northing</h4>
+            <p>
+            Each 100,000m grid square is further divided into smaller squares
+            representing 1m, 10m, 100m, 1,000m and 10,000m precision. The easting and
+            northing are given using the numeric row and column reference of the square,
+            starting at the bottom-left corner of the square.
+            </p>
+            <h4>MGRS Reference Example</h4>
+            <p>
+            18SUU8362601432 is an example of an MGRS reference. '18' is the UTM longitude
+            zone, 'S' is the UTM latitude zone, 'UU' is the 100,000m square
+            identification, 83626 is the easting reference to 1m precision and 01432 is
+            the northing reference to 1m precision.
+            </p>
+            <h3>MGRSRef</h3>
+            <p>
+            Methods are provided to query an <see cref="T:DotNetCoords.MGRSRef"/> object for its
+            parameters. As MGRS references are related to UTM references, a
+            <see cref="M:DotNetCoords.MGRSRef.ToUTMRef"/> method is provided to
+            convert an <see cref="T:DotNetCoords.MGRSRef"/> object into a <see cref="T:DotNetCoords.UTMRef"/>
+            object. The reverse conversion can be made using the
+            <see cref="M:DotNetCoords.MGRSRef.#ctor(DotNetCoords.UTMRef)"/> constructor.
+            </p>
+            <p>
+            	<see cref="T:DotNetCoords.MGRSRef"/> objects can be converted to
+            <see cref="T:DotNetCoords.LatLng"/> objects using the
+            <see cref="M:DotNetCoords.MGRSRef.ToLatLng"/> method. The reverse
+            conversion is made using the
+            <see cref="M:DotNetCoords.LatLng.ToMGRSRef"/> method.
+            </p>
+            <p>
+            Some MGRS references use the Bessel 1841 ellipsoid rather than the Geodetic
+            Reference System 1980 (GRS 1980), International or World Geodetic System 1984
+            (WGS84) ellipsoids. Use the constructors with the optional boolean parameter
+            to be able to specify whether your MGRS reference uses the Bessel 1841
+            ellipsoid. Note that no automatic determination of the correct ellipsoid to
+            use is made.
+            </p>
+            <p>
+            	<b>Important note</b>: There is currently no support for MGRS references in
+            polar regions north of 84°N and south of 80°S. There is also no
+            account made for UTM zones with slightly different sizes to normal around
+            Svalbard and Norway.
+            </p>
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.utmZoneNumber">
+            
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.utmZoneChar">
+            
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.eastingID">
+            
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.northingID">
+            
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.easting">
+            
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.northing">
+            
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.precision">
+            The initial precision of this MGRS reference. Must be one of
+            MGRSRef.PRECISION_1M, MGRSRef.PRECISION_10M, MGRSRef.PRECISION_100M,
+            MGRSRef.PRECISION_1000M or MGRSRef.PRECISION_10000M.
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.isBessel">
+            
+        </member>
+        <member name="F:DotNetCoords.MGRSRef.northingIDs">
+            Northing characters
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.#ctor(DotNetCoords.UTMRef)">
+            <summary>
+            Create a new MGRS reference object from the given UTM reference. It is
+            assumed that the UTMRef object is valid.
+            </summary>
+            <param name="utm">A UTM reference.</param>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.#ctor(DotNetCoords.UTMRef,System.Boolean)">
+            <summary>
+            Create a new MGRS reference object from the given UTM reference. It is
+            assumed that this MGRS reference represents a point using the GRS 1980,
+            International or WGS84 ellipsoids. It is assumed that the UTMRef object is
+            valid.
+            </summary>
+            <param name="utm">A UTM reference.</param>
+            <param name="isBessel">true if the parameters represent an MGRS reference using the
+            Bessel 1841 ellipsoid; false is the parameters represent an MGRS
+            reference using the GRS 1980, International or WGS84 ellipsoids.</param>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.#ctor(System.Int32,System.Char,System.Char,System.Char,System.Int32,System.Int32,DotNetCoords.Precision)">
+            <summary>
+            Create a new MGRS reference object from the given paramaters. It is assumed
+            that this MGRS reference represents a point using the GRS 1980,
+            International or WGS84 ellipsoids. An IllegalArgumentException is thrown if
+            any of the parameters are invalid.
+            </summary>
+            <param name="utmZoneNumber">The UTM zone number representing the longitude.</param>
+            <param name="utmZoneChar">The UTM zone character representing the latitude.</param>
+            <param name="eastingID">Character representing the 100,000km easting square.</param>
+            <param name="northingID">Character representing the 100,000km northing square.</param>
+            <param name="easting">Easting in metres.</param>
+            <param name="northing">Northing in metres.</param>
+            <param name="precision">The precision of the given easting and northing.</param>
+            <exception cref="T:System.ArgumentException">If any of the given parameters are invalid.</exception>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.#ctor(System.Int32,System.Char,System.Char,System.Char,System.Int32,System.Int32,DotNetCoords.Precision,System.Boolean)">
+            <summary>
+            Create a new MGRS reference object from the given parameters. An
+            ArgumentException is thrown if any of the parameters are invalid.
+            </summary>
+            <param name="utmZoneNumber">The UTM zone number representing the longitude.</param>
+            <param name="utmZoneChar">The UTM zone character representing the latitude.</param>
+            <param name="eastingId">Character representing the 100,000km easting square.</param>
+            <param name="northingId">Character representing the 100,000km northing square.</param>
+            <param name="easting">Easting in metres.</param>
+            <param name="northing">Northing in metres.</param>
+            <param name="precision">The precision of the given easting and northing.</param>
+            <param name="isBessel">true if the parameters represent an MGRS reference using the
+            Bessel 1841 ellipsoid; false is the parameters represent an MGRS
+            reference using the GRS 1980, International or WGS84 ellipsoids.</param>
+            <exception cref="T:System.ArgumentException">If any of the given parameters are invalid. Note that the
+            parameters are only checked for the range of values that they can
+            take on. Being able to create an MGRSRef object does not
+            necessarily imply that the reference is valid.</exception>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.#ctor(System.String)">
+            <summary>
+            Create a new MGRS reference object from the given String. Must be correctly
+            formatted otherwise an IllegalArgumentException will be thrown. It is
+            assumed that this MGRS reference represents a point using the GRS 1980,
+            International or WGS84 ellipsoids.
+            </summary>
+            <param name="gridRef">A string to create an MGRS reference from.</param>
+            <exception cref="T:System.ArgumentException">if the given String is not correctly formatted.</exception>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.#ctor(System.String,System.Boolean)">
+             <summary>
+             Create a new MGRS reference object from the given String. Must be correctly
+             formatted otherwise an ArgumentException will be thrown.
+            
+             Matching regex: (\d{1,2})([A-Z])([A-Z])([A-Z])(\d{2,10})
+             </summary>
+             <param name="gridRef">a string to create an MGRS reference from.</param>
+             <param name="isBessel">True if the parameters represent an MGRS reference using the
+             Bessel 1841 ellipsoid; false is the parameters represent an MGRS
+             reference using the GRS 1980, International or WGS84 ellipsoids.</param>
+             <exception cref="T:System.ArgumentException">if the given String is not correctly formatted.</exception>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.ToUTMRef">
+            <summary>
+            Convert this MGRS reference to an equivelent UTM reference.
+            This method based on http://www.stellman-greene.com/mgrs_to_utm/
+            </summary>
+            <returns>The equivalent UTM reference.</returns>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.ToLatLng">
+            <summary>
+            Convert this MGRS reference to a latitude and longitude.
+            </summary>
+            <returns>
+            The converted latitude and longitude.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.ToString">
+            <summary>
+            Return a string representation of this MGRS Reference to whatever precision
+            this reference is set to.
+            </summary>
+            <returns>
+            a string representation of this MGRS reference to whatever
+            precision this reference is set to.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.ToString(DotNetCoords.Precision)">
+            <summary>
+            Return a String representation of this MGRS reference to 1m, 10m, 100m,
+            1000m or 10000m precision.
+            </summary>
+            <param name="precision">The required precision.</param>
+            <returns>A string representation of this MGRS reference to the required
+            precision.</returns>
+        </member>
+        <member name="M:DotNetCoords.MGRSRef.IsBessel">
+            <summary>
+            Determines whether this instance represents an MGRS reference using the
+            Bessel 1841 ellipsoid.
+            </summary>
+            <returns>
+            	<c>true</c> if the instance represents an MGRS reference using the
+            Bessel 1841 ellipsoid; <c>false</c> if the instance represents an MGRS
+            reference using the GRS 1980, International or WGS84 ellipsoids.
+            </returns>
+        </member>
+        <member name="P:DotNetCoords.MGRSRef.Easting">
+            <summary>
+            Gets the easting.
+            </summary>
+            <value>The easting.</value>
+        </member>
+        <member name="P:DotNetCoords.MGRSRef.EastingId">
+            <summary>
+            Gets the easting ID.
+            </summary>
+            <value>The easting ID.</value>
+        </member>
+        <member name="P:DotNetCoords.MGRSRef.Northing">
+            <summary>
+            Gets the northing.
+            </summary>
+            <value>The northing.</value>
+        </member>
+        <member name="P:DotNetCoords.MGRSRef.NorthingId">
+            <summary>
+            Gets the northing ID.
+            </summary>
+            <value>The northing ID.</value>
+        </member>
+        <member name="P:DotNetCoords.MGRSRef.Precision">
+            <summary>
+            Gets the precision.
+            </summary>
+            <value>The precision.</value>
+        </member>
+        <member name="P:DotNetCoords.MGRSRef.UtmZoneChar">
+            <summary>
+            Gets the UTM zone character representing the latitude.
+            </summary>
+            <value>The UTM zone character representing the latitude.</value>
+        </member>
+        <member name="P:DotNetCoords.MGRSRef.UtmZoneNumber">
+            <summary>
+            Gets the UTM zone number representing the longitude.
+            </summary>
+            <value>The UTM zone number representing the longitude.</value>
+        </member>
+        <member name="T:DotNetCoords.NotDefinedOnUtmGridException">
+            <summary>
+            NotDefinedOnUtmGridException exception class, thrown when parameters are provided that do not fit 
+            into the Universal Transverse Mercator grid
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.NotDefinedOnUtmGridException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.NotDefinedOnUtmGridException"/> class.
+            </summary>
+        </member>
+        <member name="M:DotNetCoords.NotDefinedOnUtmGridException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.NotDefinedOnUtmGridException"/> class.
+            </summary>
+            <param name="message">The message details of the exception.</param>
+        </member>
+        <member name="M:DotNetCoords.NotDefinedOnUtmGridException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DotNetCoords.NotDefinedOnUtmGridException"/> class.
+            </summary>
+            <param name="message">The message details of the exception.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="T:DotNetCoords.OSRef">
+            <summary>
+            <p>
+            Class to represent an Ordnance Survey of Great Britain (OSGB) grid reference.
+            </p>
+            <p>
+            	<b>British National Grid</b><br/>
+            	<ul>
+            		<li>Projection: Transverse Mercator</li>
+            		<li>Reference ellipsoid: Airy 1830</li>
+            		<li>Units: metres</li>
+            		<li>Origin: 49°N, 2°W</li>
+            		<li>False co-ordinates of origin: 400000m east, -100000m north</li>
+            	</ul>
+            </p>
+            <p>
+            A full reference includes a two-character code identifying a particular
+            100,000m grid square. The table below shows how the two-character 100,000m
+            grid squares are identified. The bottom left corner is at the false origin of
+            the grid. Squares without values fall outside the boundaries of the British
+            National Grid.
+            </p>
+            <table border="1">
+            	<tr>
+            		<th> km</th>
+            		<th>0</th>
+            		<th>100</th>
+            		<th>200</th>
+            		<th>300</th>
+            		<th>400</th>
+            		<th>500</th>
+            		<th>600</th>
+            		<th>700</th>
+            	</tr>
+            	<tr>
+            		<th>1200</th>
+            		<td>HL</td>
+            		<td>HM</td>
+            		<td>HN</td>
+            		<td>HO</td>
+            		<td>HP</td>
+            		<td>JL</td>
+            		<td>JM</td>
+            		<td>
+            		</td>
+            	</tr>
+            	<tr>
+            		<th>1100</th>
+            		<td>HQ</td>
+            		<td>HR</td>
+            		<td>HS</td>
+            		<td>HT</td>
+            		<td>HU</td>
+            		<td>JQ</td>
+            		<td>JR</td>
+            		<td>
+            		</td>
+            	</tr>
+            	<tr>
+            		<th>1000</th>
+            		<td>HV</td>
+            		<td>HW</td>
+            		<td>HX</td>
+            		<td>HY</td>
+            		<td>HZ</td>
+            		<td>JV</td>
+            		<td>JW</td>
+            		<td>
+            		</td>
+            	</tr>
+            	<tr>
+            		<th> 900</th>
+            		<td>NA</td>
+            		<td>NB</td>
+            		<td>NC</td>
+            		<td>ND</td>
+            		<td>NE</td>
+            		<td>OA</td>
+            		<td>OB</td>
+            		<td>
+            		</td>
+            	</tr>
+            	<tr>
+            		<th> 800</th>
+            		<td>NF</td>
+            		<td>NG</td>
+            		<td>NH</td>
+            		<td>NJ</td>
+            		<td>NK</td>
+            		<td>OF</td>
+            		<td>OG</td>
+            		<td>OH</td>
+            	</tr>
+            	<tr>
+            		<th> 700</th>
+            		<td>NL</td>
+            		<td>NM</td>
+            		<td>NN</td>
+            		<td>NO</td>
+            		<td>NP</td>
+            		<td>OL</td>
+            		<td>OM</td>
+            		<td>ON</td>
+            	</tr>
+            	<tr>
+            		<th> 600</th>
+            		<td>NQ</td>
+            		<td>NR</td>
+            		<td>NS</td>
+            		<td>NT</td>
+            		<td>NU</td>
+            		<td>OQ</td>
+            		<td>OR</td>
+            		<td>OS</td>
+            	</tr>
+            	<tr>
+            		<th> 500</th>
+            		<td>
+            		</td>
+            		<td>NW</td>
+            		<td>NX</td>
+            		<td>NY</td>
+            		<td>NZ</td>
+            		<td>OV</td>
+            		<td>OW</td>
+            		<td>OX</td>
+            	</tr>
+            	<tr>
+            		<th> 400</th>
+            		<td>
+            		</td>
+            		<td>SB</td>
+            		<td>SC</td>
+            		<td>SD</td>
+            		<td>SE</td>
+            		<td>TA</td>
+            		<td>TB</td>
+            		<td>TC</td>
+            	</tr>
+            	<tr>
+            		<th> 300</th>
+            		<td>
+            		</td>
+            		<td>SG</td>
+            		<td>SH</td>
+            		<td>SJ</td>
+            		<td>SK</td>
+            		<td>TF</td>
+            		<td>TG</td>
+            		<td>TH</td>
+            	</tr>
+            	<tr>
+            		<th> 200</th>
+            		<td>
+            		</td>
+            		<td>SM</td>
+            		<td>SN</td>
+            		<td>SO</td>
+            		<td>SP</td>
+            		<td>TL</td>
+            		<td>TM</td>
+            		<td>TN</td>
+            	</tr>
+            	<tr>
+            		<th> 100</th>
+            		<td>SQ</td>
+            		<td>SR</td>
+            		<td>SS</td>
+            		<td>ST</td>
+            		<td>SU</td>
+            		<td>TQ</td>
+            		<td>TR</td>
+            		<td>TS</td>
+            	</tr>
+            	<tr>
+            		<th> 0</th>
+            		<td>SV</td>
+            		<td>SW</td>
+            		<td>SX</td>
+            		<td>SY</td>
+            		<td>SZ</td>
+            		<td>TV</td>
+            		<td>TW</td>
+            		<td>
+            		</td>
+            	</tr>
+            </table>
+            <p>
+            Within each 100,000m square, the grid is further subdivided into 1000m
+            squares. These 1km squares are shown on Ordnance Survey 1:25000 and 1:50000
+            mapping as the main grid. To reference a 1km square, give the easting and
+            then the northing, e.g. TR2266. In this example, TR represents the 100,000m
+            square, 22 represents the easting (in km) and 66 represents the northing (in
+            km). This is commonly called a four-figure grid reference.
+            </p>
+            <p>
+            It is possible to extend the four-figure grid reference for more accuracy.
+            For example, a six-figure grid reference would be accurate to 100m and an
+            eight-figure grid reference would be accurate to 10m.
+            </p>
+            <p>
+            When providing local references, the 2 characters representing the 100,000m
+            square are often omitted.
+            </p>
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.OSRef.easting">
+            The easting in metres relative to the origin of the British National Grid.
+        </member>
+        <member name="F:DotNetCoords.OSRef.northing">
+            The northing in metres relative to the origin of the British National Grid.
+        </member>
+        <member name="M:DotNetCoords.OSRef.#ctor(System.Double,System.Double)">
+            <summary>
+            Create a new Ordnance Survey grid reference using a given easting and
+            northing. The easting and northing must be in metres and must be relative
+            to the origin of the British National Grid.
+            </summary>
+            <param name="easting">The easting in metres. Must be greater than or equal to 0.0 and
+            less than 800000.0.</param>
+            <param name="northing">The northing in metres. Must be greater than or equal to 0.0 and
+            less than 1400000.0.</param>
+            <exception cref="T:System.ArgumentException">If the northing or easting are out of range</exception>
+        </member>
+        <member name="M:DotNetCoords.OSRef.#ctor(System.String)">
+            <summary>
+            Take a string formatted as a 6, 8 or 10 figure OS grid reference (e.g. "TG514131")
+            and create a new OSRef object that represents that grid reference. The
+            first character must be H, N, S, O or T. The second character can be any
+            uppercase character from A through Z excluding I.
+            </summary>
+            <param name="gridRef">a string representing a 6, 8 or 10 figure Ordnance Survey grid reference
+            in the form XY123456.</param>
+            <exception cref="T:System.ArgumentException">If the northing or easting are out of range</exception>
+        </member>
+        <member name="M:DotNetCoords.OSRef.#ctor(DotNetCoords.LatLng)">
+            <summary>
+            Convert this latitude and longitude into an OSGB (Ordnance Survey of Great
+            Britain) grid reference.
+            </summary>
+            <param name="ll">The latitude and longitude.</param>
+            <exception cref="T:System.ArgumentException">If the northing or easting are out of range</exception>
+        </member>
+        <member name="M:DotNetCoords.OSRef.ToString">
+            <summary>
+            Return a string representation of this OSGB grid reference showing the
+            easting and northing.
+            </summary>
+            <returns>
+            a string represenation of this OSGB grid reference.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.OSRef.ToTenFigureString">
+            <summary>
+            Return a string representation of this OSGB grid reference using the
+            ten-figure notation in the form XY 12345 67890.
+            </summary>
+            <returns>A string representing this OSGB grid reference in ten-figure
+            notation</returns>
+        </member>
+        <member name="M:DotNetCoords.OSRef.ToSixFigureString">
+            <summary>
+            Return a string representation of this OSGB grid reference using the
+            six-figure notation in the form XY123456.
+            </summary>
+            <returns>A string representing this OSGB grid reference in six-figure
+            notation</returns>
+        </member>
+        <member name="M:DotNetCoords.OSRef.ToLatLng">
+            <summary>
+            Convert this OSGB grid reference to a latitude/longitude pair using the
+            OSGB36 datum. Note that, the LatLng object may need to be converted to the
+            WGS84 datum depending on the application.
+            </summary>
+            <returns>
+            A LatLng object representing this OSGB grid reference using the
+            OSGB36 datum
+            </returns>
+        </member>
+        <member name="P:DotNetCoords.OSRef.Easting">
+            <summary>
+            Gets or sets the easting in metres relative to the origin of the British National Grid..
+            </summary>
+            <value>The easting.</value>
+            <exception cref="T:System.ArgumentException">If the easting is out of range</exception>
+        </member>
+        <member name="P:DotNetCoords.OSRef.Northing">
+            <summary>
+            Gets or sets the northing in metres relative to the origin of the British National
+            Grid.
+            </summary>
+            <value>The northing.</value>
+            <exception cref="T:System.ArgumentException">If the northing is out of range</exception>
+        </member>
+        <member name="M:DotNetCoords.Util.sinSquared(System.Double)">
+            Calculate sin^2(x).
+            
+            @param x
+                     x
+            @return sin^2(x)
+            @since 1.0
+        </member>
+        <member name="M:DotNetCoords.Util.sinCubed(System.Double)">
+            Calculate sin^3(x).
+            
+            @param x
+                     x
+            @return sin^3(x)
+            @since 1.1
+        </member>
+        <member name="M:DotNetCoords.Util.cosSquared(System.Double)">
+            Calculate cos^2(x).
+            
+            @param x
+                     x
+            @return cos^2(x)
+            @since 1.0
+        </member>
+        <member name="M:DotNetCoords.Util.cosCubed(System.Double)">
+            Calculate cos^3(x).
+            
+            @param x
+                     x
+            @return cos^3(x)
+            @since 1.1
+        </member>
+        <member name="M:DotNetCoords.Util.tanSquared(System.Double)">
+            Calculate tan^2(x).
+            
+            @param x
+                     x
+            @return tan^2(x)
+            @since 1.0
+        </member>
+        <member name="M:DotNetCoords.Util.sec(System.Double)">
+            Calculate sec(x).
+            
+            @param x
+                     x
+            @return sec(x)
+            @since 1.0
+        </member>
+        <member name="T:DotNetCoords.UTMRef">
+            <summary>
+            Class to represent a Universal Transverse Mercator (UTM) reference.
+            </summary>
+        </member>
+        <member name="F:DotNetCoords.UTMRef.easting">
+            Easting
+        </member>
+        <member name="F:DotNetCoords.UTMRef.northing">
+            Northing
+        </member>
+        <member name="F:DotNetCoords.UTMRef.latZone">
+            Latitude zone character
+        </member>
+        <member name="F:DotNetCoords.UTMRef.lngZone">
+            Longitude zone number
+        </member>
+        <member name="M:DotNetCoords.UTMRef.#ctor(System.Int32,System.Char,System.Double,System.Double)">
+            <summary>
+            Create a new UTM reference object using the WGS84 datum. Checks are made to make sure that the
+            given parameters are roughly valid, but the checks are not exhaustive with
+            regards to the easting value. Catching a NotDefinedOnUTMGridException does
+            not necessarily mean that the UTM reference is well-formed. This is because
+            that valid values for the easting vary depending on the latitude.
+            </summary>
+            <param name="lngZone">The longitude zone number.</param>
+            <param name="latZone">The latitude zone character.</param>
+            <param name="easting">The easting in metres.</param>
+            <param name="northing">The northing in metres.</param>
+            <exception cref="T:DotNetCoords.NotDefinedOnUtmGridException">
+            If any of the parameters are invalid. Be careful that a valid
+            value for the easting does not necessarily mean that the UTM
+            reference is well-formed. The current checks do not take into
+            account the varying range of valid values for the easting for
+            different latitudes.</exception>
+        </member>
+        <member name="M:DotNetCoords.UTMRef.#ctor(System.Int32,System.Char,System.Double,System.Double,DotNetCoords.Datum.Datum)">
+            <summary>
+            Create a new UTM reference object. Checks are made to make sure that the
+            given parameters are roughly valid, but the checks are not exhaustive with
+            regards to the easting value. Catching a NotDefinedOnUTMGridException does
+            not necessarily mean that the UTM reference is well-formed. This is because
+            that valid values for the easting vary depending on the latitude.
+            </summary>
+            <param name="lngZone">The longitude zone number.</param>
+            <param name="latZone">The latitude zone character.</param>
+            <param name="easting">The easting in metres.</param>
+            <param name="northing">The northing in metres.</param>
+            <param name="datum">The datum of the UTM reference</param>
+            <exception cref="T:DotNetCoords.NotDefinedOnUtmGridException">
+            If any of the parameters are invalid. Be careful that a valid
+            value for the easting does not necessarily mean that the UTM
+            reference is well-formed. The current checks do not take into
+            account the varying range of valid values for the easting for
+            different latitudes.</exception>
+        </member>
+        <member name="M:DotNetCoords.UTMRef.ToLatLng">
+            <summary>
+            Convert this UTM reference to a latitude and longitude.
+            </summary>
+            <returns>
+            The converted latitude and longitude.
+            </returns>
+        </member>
+        <member name="M:DotNetCoords.UTMRef.GetUTMLatitudeZoneLetter(System.Double)">
+            <summary>
+            Work out the UTM latitude zone from the latitude.
+            </summary>
+            <param name="latitude">The latitude to find the UTM latitude zone for.</param>
+            <returns>The UTM latitude zone for the given latitude.</returns>
+        </member>
+        <member name="M:DotNetCoords.UTMRef.ToString">
+            <summary>
+            Convert this UTM reference to a String representation for printing out.
+            </summary>
+            <returns>A string representation of this UTM reference.</returns>
+        </member>
+        <member name="P:DotNetCoords.UTMRef.Easting">
+            <summary>
+            Gets the easting.
+            </summary>
+            <value>The easting.</value>
+        </member>
+        <member name="P:DotNetCoords.UTMRef.Northing">
+            <summary>
+            Gets the northing.
+            </summary>
+            <value>The northing.</value>
+        </member>
+        <member name="P:DotNetCoords.UTMRef.LatZone">
+            <summary>
+            Gets the latitude zone character.
+            </summary>
+            <value>The latitude zone character.</value>
+        </member>
+        <member name="P:DotNetCoords.UTMRef.LngZone">
+            <summary>
+            Get the longitude zone number.
+            </summary>
+            <value>The longitude zone number.</value>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,14 @@
+C:\Source\dotNET2\DotNetCoords\Bin\Debug\DotNetCoordsPhone.dll
+C:\Source\dotNET2\DotNetCoords\Bin\Debug\DotNetCoordsPhone.pdb
+C:\Source\dotNET2\DotNetCoords\obj\Debug\DotNetCoordsPhone.dll
+C:\Source\dotNET2\DotNetCoords\obj\Debug\DotNetCoordsPhone.pdb
+C:\Source\dotNET2\DotNetCoords\obj\Debug\DotNetCoordsPhone.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\Bin\Debug\DotNetCoordsPhone.dll
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\Bin\Debug\DotNetCoordsPhone.pdb
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\obj\Debug\DotNetCoordsPhone.dll
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\obj\Debug\DotNetCoordsPhone.pdb
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\obj\Debug\DotNetCoordsPhone.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\Bin\Debug\DotNetCoordsPhone.dll
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\Bin\Debug\DotNetCoordsPhone.pdb
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\obj\Debug\DotNetCoordsPhone.dll
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\obj\Debug\DotNetCoordsPhone.pdb

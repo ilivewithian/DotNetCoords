@@ -1,0 +1,21 @@
+C:\Source\dotNET2\DotNetCoords\bin\Debug\DotNetCoords.dll
+C:\Source\dotNET2\DotNetCoords\bin\Debug\DotNetCoords.pdb
+C:\Source\dotNET2\DotNetCoords\obj\Debug\DotNetCoords.dll
+C:\Source\dotNET2\DotNetCoords\obj\Debug\DotNetCoords.pdb
+C:\Source\dotNET2\DotNetCoords\bin\Debug\DotNetCoords.dll.config
+C:\Source\dotNET2\DotNetCoords\bin\Debug\DotNetCoords.XML
+C:\Source\dotNET2\DotNetCoords\obj\Debug\DotNetCoords.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\bin\Debug\DotNetCoords.dll.config
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\bin\Debug\DotNetCoords.dll
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\bin\Debug\DotNetCoords.pdb
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\obj\Debug\DotNetCoords.csprojResolveAssemblyReference.cache
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\obj\Debug\DotNetCoords.dll
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\obj\Debug\DotNetCoords.pdb
+C:\Users\Christopher\Documents\Visual Studio 2010\Projects\DotNetCoords\bin\Debug\DotNetCoords.XML
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\bin\Debug\DotNetCoords.dll.config
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\bin\Debug\DotNetCoords.XML
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\bin\Debug\DotNetCoords.dll
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\bin\Debug\DotNetCoords.pdb
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\obj\Debug\DotNetCoords.dll
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\obj\Debug\DotNetCoords.pdb
+C:\Users\Christopher\SkyDrive\Code\DotNetCoords\obj\Debug\DotNetCoords.csprojResolveAssemblyReference.cache

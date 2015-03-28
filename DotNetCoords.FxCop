@@ -1,0 +1,1071 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="10.0" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">$(ProjectDir)/../../../program files/microsoft fxcop 1.36/Xml/FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/bin/Debug/DotNetCoords.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="10.0">
+  <Namespaces>
+   <Namespace Name="DotNetCoords">
+    <Messages>
+     <Message Id="Coords" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+      <Issue Name="Namespace">
+       <Item>Coords</Item>
+       <Item>DotNetCoords</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="DotNetCoords.Datum">
+    <Messages>
+     <Message Id="Coords" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+      <Issue Name="Namespace">
+       <Item>Coords</Item>
+       <Item>DotNetCoords.Datum</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="DotNetCoords.Datum.NAD27">
+    <Messages>
+     <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+      <Issue Name="Namespace">
+       <Item>NAD</Item>
+       <Item>DotNetCoords.Datum.NAD27</Item>
+       <Item>Nad</Item>
+      </Issue>
+     </Message>
+     <Message Id="Coords" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+      <Issue Name="Namespace">
+       <Item>Coords</Item>
+       <Item>DotNetCoords.Datum.NAD27</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="DotNetCoords.Ellipsoid">
+    <Messages>
+     <Message Id="Coords" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+      <Issue Name="Namespace">
+       <Item>Coords</Item>
+       <Item>DotNetCoords.Ellipsoid</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="$(ProjectDir)/bin/Debug/DotNetCoords.dll">
+    <Modules>
+     <Module Name="dotnetcoords.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2009-11-15 19:23:10Z">
+        <Issue Name="NoStrongName">
+         <Item>'DotNetCoords.dll'</Item>
+        </Issue>
+       </Message>
+       <Message Id="Coords" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+        <Issue Name="Assembly">
+         <Item>Coords</Item>
+         <Item>'DotNetCoords.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="DotNetCoords">
+        <Types>
+         <Type Name="EastWest">
+          <Messages>
+           <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Created="2010-12-28 17:42:16Z" FixCategory="NonBreaking">
+            <Issue Name="NotFlagsNoZeroValue">
+             <Item>'EastWest'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="ECEFRef">
+          <Messages>
+           <Message Id="ECEF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>ECEF</Item>
+             <Item>'ECEFRef'</Item>
+             <Item>Ecef</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(System.Double,System.Double,System.Double)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'ECEFRef.ECEFRef(double, double, double)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'ECEFRef.ECEFRef(double, double, double)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+             <Message Id="z" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'ECEFRef.ECEFRef(double, double, double)'</Item>
+               <Item>'z'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(System.Double,System.Double,System.Double,DotNetCoords.Datum.Datum)">
+            <Messages>
+             <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'ECEFRef.ECEFRef(double, double, double, Datum)'</Item>
+               <Item>'x'</Item>
+              </Issue>
+             </Message>
+             <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'ECEFRef.ECEFRef(double, double, double, Datum)'</Item>
+               <Item>'y'</Item>
+              </Issue>
+             </Message>
+             <Message Id="z" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'ECEFRef.ECEFRef(double, double, double, Datum)'</Item>
+               <Item>'z'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#X">
+            <Messages>
+             <Message Id="X" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-21 15:10:35Z">
+              <Issue Name="MemberMoreMeaningfulName">
+               <Item>'ECEFRef.X'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Y">
+            <Messages>
+             <Message Id="Y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-21 15:10:35Z">
+              <Issue Name="MemberMoreMeaningfulName">
+               <Item>'ECEFRef.Y'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Z">
+            <Messages>
+             <Message Id="Z" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-21 15:10:35Z">
+              <Issue Name="MemberMoreMeaningfulName">
+               <Item>'ECEFRef.Z'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="IrishRef">
+          <Members>
+           <Member Name="#.ctor(System.String)">
+            <Messages>
+             <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2009-11-15 19:23:10Z">
+              <Issue Name="IFormatProviderAlternate">
+               <Item>'int.Parse(string)'</Item>
+               <Item>'IrishRef.IrishRef(string)'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+              <Issue Name="IFormatProviderAlternate">
+               <Item>'int.Parse(string)'</Item>
+               <Item>'IrishRef.IrishRef(string)'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="LatLng">
+          <Members>
+           <Member Name="#ToDatum(DotNetCoords.Datum.Datum)">
+            <Messages>
+             <Message TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800" Created="2009-11-17 06:17:59Z">
+              <Issue Name="Parameter">
+               <Item>'d'</Item>
+               <Item>'WGS84Datum'</Item>
+               <Item>'LatLng.ToDatum(Datum)'</Item>
+               <Item>isint</Item>
+              </Issue>
+             </Message>
+             <Message Id="d" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-17 06:17:59Z">
+              <Issue Name="MemberParameterMoreMeaningfulName">
+               <Item>'LatLng.ToDatum(Datum)'</Item>
+               <Item>'d'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToDMSString()">
+            <Messages>
+             <Message Id="DMS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-21 15:10:35Z">
+              <Issue Name="Member">
+               <Item>DMS</Item>
+               <Item>'LatLng.ToDMSString()'</Item>
+               <Item>Dms</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToMGRSRef()">
+            <Messages>
+             <Message Id="MGRS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-17 06:17:59Z">
+              <Issue Name="Member">
+               <Item>MGRS</Item>
+               <Item>'LatLng.ToMGRSRef()'</Item>
+               <Item>Mgrs</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToOSGB36()">
+            <Messages>
+             <Message Id="OSGB" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-17 06:17:59Z">
+              <Issue Name="Member">
+               <Item>OSGB</Item>
+               <Item>'LatLng.ToOSGB36()'</Item>
+               <Item>Osgb</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToUtmRef()">
+            <Messages>
+             <Message Id="Utm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-21 16:49:00Z">
+              <Issue Name="Member">
+               <Item>Utm</Item>
+               <Item>'LatLng.ToUtmRef()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToWGS84()">
+            <Messages>
+             <Message Id="WGS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-17 06:17:59Z">
+              <Issue Name="Member">
+               <Item>WGS</Item>
+               <Item>'LatLng.ToWGS84()'</Item>
+               <Item>Wgs</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="MGRSRef">
+          <Messages>
+           <Message Id="MGRS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>MGRS</Item>
+             <Item>'MGRSRef'</Item>
+             <Item>Mgrs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(DotNetCoords.UTMRef)">
+            <Messages>
+             <Message Id="utm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+              <Issue Name="MemberParameter">
+               <Item>'MGRSRef.MGRSRef(UTMRef)'</Item>
+               <Item>utm</Item>
+               <Item>'utm'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(DotNetCoords.UTMRef,System.Boolean)">
+            <Messages>
+             <Message Id="utm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+              <Issue Name="MemberParameter">
+               <Item>'MGRSRef.MGRSRef(UTMRef, bool)'</Item>
+               <Item>utm</Item>
+               <Item>'utm'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(System.Int32,System.Char,System.Char,System.Char,System.Int32,System.Int32,DotNetCoords.Precision)">
+            <Messages>
+             <Message Id="ID" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2010-12-28 17:42:16Z">
+              <Issue Name="MemberParameterAbbreviation">
+               <Item>'MGRSRef.MGRSRef(int, char, char, char, int, int, Precision)'</Item>
+               <Item>ID</Item>
+               <Item>'eastingID'</Item>
+               <Item>Id</Item>
+              </Issue>
+              <Issue Name="MemberParameterAbbreviation">
+               <Item>'MGRSRef.MGRSRef(int, char, char, char, int, int, Precision)'</Item>
+               <Item>ID</Item>
+               <Item>'northingID'</Item>
+               <Item>Id</Item>
+              </Issue>
+             </Message>
+             <Message Id="utm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2010-12-28 17:42:16Z">
+              <Issue Name="MemberParameter">
+               <Item>'MGRSRef.MGRSRef(int, char, char, char, int, int, Precision)'</Item>
+               <Item>utm</Item>
+               <Item>'utmZoneChar'</Item>
+              </Issue>
+              <Issue Name="MemberParameter">
+               <Item>'MGRSRef.MGRSRef(int, char, char, char, int, int, Precision)'</Item>
+               <Item>utm</Item>
+               <Item>'utmZoneNumber'</Item>
+              </Issue>
+             </Message>
+             <Message Id="char" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Created="2010-12-28 17:42:16Z">
+              <Issue Name="LanguageIndependentMemberParameter">
+               <Item>'MGRSRef.MGRSRef(int, char, char, char, int, int, Precision)'</Item>
+               <Item>Char</Item>
+               <Item>'utmZoneChar'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(System.Int32,System.Char,System.Char,System.Char,System.Int32,System.Int32,DotNetCoords.Precision,System.Boolean)">
+            <Messages>
+             <Message Id="utm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2010-12-28 17:42:16Z">
+              <Issue Name="MemberParameter">
+               <Item>'MGRSRef.MGRSRef(int, char, char, char, int, int, Precision, bool)'</Item>
+               <Item>utm</Item>
+               <Item>'utmZoneChar'</Item>
+              </Issue>
+              <Issue Name="MemberParameter">
+               <Item>'MGRSRef.MGRSRef(int, char, char, char, int, int, Precision, bool)'</Item>
+               <Item>utm</Item>
+               <Item>'utmZoneNumber'</Item>
+              </Issue>
+             </Message>
+             <Message Id="char" TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720" Created="2010-12-28 17:42:16Z">
+              <Issue Name="LanguageIndependentMemberParameter">
+               <Item>'MGRSRef.MGRSRef(int, char, char, char, int, int, Precision, bool)'</Item>
+               <Item>Char</Item>
+               <Item>'utmZoneChar'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(System.String,System.Boolean)">
+            <Messages>
+             <Message Id="gridRef" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2009-11-15 19:23:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'gridRef'</Item>
+               <Item>'MGRSRef.MGRSRef(string, bool)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="isBessel" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Created="2009-11-15 19:23:10Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'isBessel'</Item>
+               <Item>'MGRSRef.MGRSRef(string, bool)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Get_Latitude_Band_Min_Northing(System.Char,System.Double&amp;)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2011-02-14 22:03:57Z">
+              <Issue Name="TooGeneric">
+               <Item>'MGRSRef.Get_Latitude_Band_Min_Northing(char, out double)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToString(DotNetCoords.Precision)">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2010-12-28 17:42:16Z">
+              <Issue Name="IFormatProviderAlternateString">
+               <Item>'int.ToString()'</Item>
+               <Item>'MGRSRef.ToString(Precision)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+              <Issue Name="IFormatProviderAlternateString">
+               <Item>'int.ToString()'</Item>
+               <Item>'MGRSRef.ToString(Precision)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ToUTMRef()">
+            <Messages>
+             <Message Id="UTM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-21 15:10:35Z">
+              <Issue Name="Member">
+               <Item>UTM</Item>
+               <Item>'MGRSRef.ToUTMRef()'</Item>
+               <Item>Utm</Item>
+              </Issue>
+             </Message>
+             <Message Id="set" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2011-02-14 22:03:57Z">
+              <Issue>
+               <Item>'MGRSRef.ToUTMRef()'</Item>
+               <Item>'set'</Item>
+               <Item>'int'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UtmZoneChar">
+            <Messages>
+             <Message Id="Utm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-21 15:10:35Z">
+              <Issue Name="Member">
+               <Item>Utm</Item>
+               <Item>'MGRSRef.UtmZoneChar'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UtmZoneNumber">
+            <Messages>
+             <Message Id="Utm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-21 15:10:35Z">
+              <Issue Name="Member">
+               <Item>Utm</Item>
+               <Item>'MGRSRef.UtmZoneNumber'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="NorthSouth">
+          <Messages>
+           <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Created="2010-12-28 17:42:16Z" FixCategory="NonBreaking">
+            <Issue Name="NotFlagsNoZeroValue">
+             <Item>'NorthSouth'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NotDefinedOnUtmGridException">
+          <Messages>
+           <Message Id="Utm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-21 16:49:00Z">
+            <Issue Name="Type">
+             <Item>Utm</Item>
+             <Item>'NotDefinedOnUtmGridException'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="OSRef">
+          <Members>
+           <Member Name="#.ctor(System.String)">
+            <Messages>
+             <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2009-11-15 19:23:10Z">
+              <Issue Name="IFormatProviderAlternate">
+               <Item>'int.Parse(string)'</Item>
+               <Item>'OSRef.OSRef(string)'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+              <Issue Name="IFormatProviderAlternate">
+               <Item>'int.Parse(string)'</Item>
+               <Item>'OSRef.OSRef(string)'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+               <Item>'CultureInfo.CurrentCulture'</Item>
+               <Item>'CultureInfo.InvariantCulture'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Precision">
+          <Messages>
+           <Message TypeName="DoNotPrefixEnumValuesWithTypeName" Category="Microsoft.Naming" CheckId="CA1712" Created="2010-12-28 17:42:16Z">
+            <Issue>
+             <Item>Precision10000M</Item>
+             <Item>'Precision'</Item>
+            </Issue>
+            <Issue>
+             <Item>Precision1000M</Item>
+             <Item>'Precision'</Item>
+            </Issue>
+            <Issue>
+             <Item>Precision100M</Item>
+             <Item>'Precision'</Item>
+            </Issue>
+            <Issue>
+             <Item>Precision10M</Item>
+             <Item>'Precision'</Item>
+            </Issue>
+            <Issue>
+             <Item>Precision1M</Item>
+             <Item>'Precision'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Created="2010-12-28 17:42:16Z" FixCategory="NonBreaking">
+            <Issue Name="NotFlagsNoZeroValue">
+             <Item>'Precision'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="UTMRef">
+          <Messages>
+           <Message Id="UTM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>UTM</Item>
+             <Item>'UTMRef'</Item>
+             <Item>Utm</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#GetUTMLatitudeZoneLetter(System.Double)">
+            <Messages>
+             <Message Id="UTM" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-21 16:27:56Z">
+              <Issue Name="Member">
+               <Item>UTM</Item>
+               <Item>'UTMRef.GetUTMLatitudeZoneLetter(double)'</Item>
+               <Item>Utm</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="DotNetCoords.Datum">
+        <Types>
+         <Type Name="Datum">
+          <Messages>
+           <Message TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724" Created="2009-11-15 19:23:10Z">
+            <Issue>
+             <Item>'Datum'</Item>
+             <Item>DotNetCoords.Datum</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="Datum`1">
+          <Members>
+           <Member Name="#Instance">
+            <Messages>
+             <Message TypeName="DoNotDeclareStaticMembersOnGenericTypes" Category="Microsoft.Design" CheckId="CA1000" Created="2010-12-28 17:42:16Z">
+              <Issue>
+               <Item>'Datum&lt;T&gt;.Instance'</Item>
+               <Item>'Datum&lt;T&gt;'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ETRF89Datum">
+          <Messages>
+           <Message Id="ETRF" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>ETRF</Item>
+             <Item>'ETRF89Datum'</Item>
+             <Item>Etrf</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="OSGB36Datum">
+          <Messages>
+           <Message Id="OSGB" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>OSGB</Item>
+             <Item>'OSGB36Datum'</Item>
+             <Item>Osgb</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WGS84Datum">
+          <Messages>
+           <Message Id="WGS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>WGS</Item>
+             <Item>'WGS84Datum'</Item>
+             <Item>Wgs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="DotNetCoords.Datum.NAD27">
+        <Types>
+         <Type Name="NAD27AlaskaDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27AlaskaDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27AlbertaBritishColumbiaDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27AlbertaBritishColumbiaDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27AleutianEastDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27AleutianEastDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27AleutianWestDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27AleutianWestDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27BahamasDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27BahamasDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CanadaDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CanadaDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CanadaEastDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CanadaEastDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CanadaManitobaOntarioDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CanadaManitobaOntarioDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CanadaNWTerritoryDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CanadaNWTerritoryDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CanadaYukonDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CanadaYukonDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CanalZoneDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CanalZoneDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CaribbeanDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CaribbeanDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CentralAmericaDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CentralAmericaDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27ContiguousUSDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27ContiguousUSDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27CubaDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27CubaDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27EasternUSDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27EasternUSDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27GreenlandDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27GreenlandDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27MexicoDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27MexicoDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27SanSalvadorDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27SanSalvadorDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="NAD27WesternUSDatum">
+          <Messages>
+           <Message Id="NAD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>NAD</Item>
+             <Item>'NAD27WesternUSDatum'</Item>
+             <Item>Nad</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="DotNetCoords.Ellipsoid">
+        <Types>
+         <Type Name="Ellipsoid">
+          <Messages>
+           <Message TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724" Created="2009-11-15 19:23:10Z">
+            <Issue>
+             <Item>'Ellipsoid'</Item>
+             <Item>DotNetCoords.Ellipsoid</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="Ellipsoid`1">
+          <Members>
+           <Member Name="#Instance">
+            <Messages>
+             <Message TypeName="DoNotDeclareStaticMembersOnGenericTypes" Category="Microsoft.Design" CheckId="CA1000" Created="2010-12-28 17:42:16Z">
+              <Issue>
+               <Item>'Ellipsoid&lt;T&gt;.Instance'</Item>
+               <Item>'Ellipsoid&lt;T&gt;'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="GRS67Ellipsoid">
+          <Messages>
+           <Message Id="GRS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>GRS</Item>
+             <Item>'GRS67Ellipsoid'</Item>
+             <Item>Grs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="GRS75Ellipsoid">
+          <Messages>
+           <Message Id="GRS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>GRS</Item>
+             <Item>'GRS75Ellipsoid'</Item>
+             <Item>Grs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="GRS80Ellipsoid">
+          <Messages>
+           <Message Id="GRS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>GRS</Item>
+             <Item>'GRS80Ellipsoid'</Item>
+             <Item>Grs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="Hayford1910Ellipsoid">
+          <Messages>
+           <Message Id="Hayford" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>Hayford</Item>
+             <Item>'Hayford1910Ellipsoid'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="Helmert1906Ellipsoid">
+          <Messages>
+           <Message Id="Helmert" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>Helmert</Item>
+             <Item>'Helmert1906Ellipsoid'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="IERS1989Ellipsoid">
+          <Messages>
+           <Message Id="IERS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>IERS</Item>
+             <Item>'IERS1989Ellipsoid'</Item>
+             <Item>Iers</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="Krassovsky1940Ellipsoid">
+          <Messages>
+           <Message Id="Krassovsky" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>Krassovsky</Item>
+             <Item>'Krassovsky1940Ellipsoid'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WGS60Ellipsoid">
+          <Messages>
+           <Message Id="WGS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>WGS</Item>
+             <Item>'WGS60Ellipsoid'</Item>
+             <Item>Wgs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WGS66Ellipsoid">
+          <Messages>
+           <Message Id="WGS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>WGS</Item>
+             <Item>'WGS66Ellipsoid'</Item>
+             <Item>Wgs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WGS72Ellipsoid">
+          <Messages>
+           <Message Id="WGS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>WGS</Item>
+             <Item>'WGS72Ellipsoid'</Item>
+             <Item>Wgs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="WGS84Ellipsoid">
+          <Messages>
+           <Message Id="WGS" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2009-11-15 19:23:10Z">
+            <Issue Name="Type">
+             <Item>WGS</Item>
+             <Item>'WGS84Ellipsoid'</Item>
+             <Item>Wgs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCastUnnecessarily" Category="Microsoft.Performance" CheckId="CA1800">
+    <Resolution Name="Parameter">{0}, a parameter, is cast to type {1} multiple times in method {2}. Cache the result of the 'as' operator or direct cast in order to eliminate the redundant {3} instruction.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotDeclareStaticMembersOnGenericTypes" Category="Microsoft.Design" CheckId="CA1000">
+    <Resolution Name="Default">Remove {0} from {1} or make it an instance member.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotPrefixEnumValuesWithTypeName" Category="Microsoft.Naming" CheckId="CA1712">
+    <Resolution Name="Default">Remove {1} from {0}.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+    <Resolution Name="TooGeneric">{0} creates an exception of type {1}, an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   </Rule>
+   <Rule TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008">
+    <Resolution Name="NotFlagsNoZeroValue">Add a member to {0} that has a value of zero with a suggested name of 'None'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+    <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="MemberParameterAbbreviation">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'. '{3}' is an abbreviation and therefore is not subject to acronym casing guidelines.</Resolution>
+    <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+    <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="MemberMoreMeaningfulName">Consider providing a more meaningful name than member name {0}.</Resolution>
+    <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="MemberParameterMoreMeaningfulName">In method {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+    <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+    <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotContainTypeNames" Category="Microsoft.Naming" CheckId="CA1720">
+    <Resolution Name="LanguageIndependentMemberParameter">In member {0}, consider replacing the data type identifier '{1}' in parameter name {2} with a more generic term, such as 'value'.</Resolution>
+   </Rule>
+   <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+    <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   </Rule>
+   <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+    <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+    <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+    <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   </Rule>
+   <Rule TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724">
+    <Resolution Name="Default">The type name {0} conflicts in whole or in part with the namespace name '{1}'. Change either name to eliminate the conflict.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
